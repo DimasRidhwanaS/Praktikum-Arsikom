@@ -1,0 +1,494 @@
+Simulator report for reg_file
+Wed Oct 25 14:46:35 2023
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ALTSYNCRAM
+  6. |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ALTSYNCRAM
+  7. Coverage Summary
+  8. Complete 1/0-Value Coverage
+  9. Missing 1-Value Coverage
+ 10. Missing 0-Value Coverage
+ 11. Simulator INI Usage
+ 12. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 116 nodes    ;
+; Simulation Coverage         ;      22.47 % ;
+; Total Number of Transitions ; 1629         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C5F256C6  ;
++-----------------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                               ;
++--------------------------------------------------------------------------------------------+---------------------+---------------+
+; Option                                                                                     ; Setting             ; Default Value ;
++--------------------------------------------------------------------------------------------+---------------------+---------------+
+; Simulation mode                                                                            ; Timing              ; Timing        ;
+; Start time                                                                                 ; 0 ns                ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF                ;               ;
+; Vector input source                                                                        ; reg_file-timing.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                  ; On            ;
+; Check outputs                                                                              ; Off                 ; Off           ;
+; Report simulation coverage                                                                 ; On                  ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                  ; On            ;
+; Display missing 1-value coverage report                                                    ; On                  ; On            ;
+; Display missing 0-value coverage report                                                    ; On                  ; On            ;
+; Detect setup and hold time violations                                                      ; Off                 ; Off           ;
+; Detect glitches                                                                            ; Off                 ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                 ; Off           ;
+; Generate Signal Activity File                                                              ; Off                 ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                 ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                 ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                  ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE          ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                 ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On                  ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                ; Auto          ;
++--------------------------------------------------------------------------------------------+---------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------------+
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ALTSYNCRAM ;
++--------------------------------------------------------------------------+
+Please refer to fitter text-based report (*.fit.rpt) to view logical memory report content in ASCII.
+
+
++--------------------------------------------------------------------------+
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ALTSYNCRAM ;
++--------------------------------------------------------------------------+
+Please refer to fitter text-based report (*.fit.rpt) to view logical memory report content in ASCII.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      22.47 % ;
+; Total nodes checked                                 ; 116          ;
+; Total output ports checked                          ; 178          ;
+; Total output ports with complete 1/0-value coverage ; 40           ;
+; Total output ports with no 1/0-value coverage       ; 137          ;
+; Total output ports with no 1-value coverage         ; 137          ;
+; Total output ports with no 0-value coverage         ; 138          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                ;
++----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+
+; Node Name                                                                  ; Output Port Name                                                           ; Output Port Type ;
++----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a3 ; portbdataout3    ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a4 ; portbdataout4    ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a5 ; portbdataout5    ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a6 ; portbdataout6    ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a3 ; portbdataout3    ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a4 ; portbdataout4    ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a5 ; portbdataout5    ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a6 ; portbdataout6    ;
+; |reg_file|RD_Data_1[3]                                                     ; |reg_file|RD_Data_1[3]                                                     ; padio            ;
+; |reg_file|RD_Data_1[4]                                                     ; |reg_file|RD_Data_1[4]                                                     ; padio            ;
+; |reg_file|RD_Data_1[5]                                                     ; |reg_file|RD_Data_1[5]                                                     ; padio            ;
+; |reg_file|RD_Data_1[6]                                                     ; |reg_file|RD_Data_1[6]                                                     ; padio            ;
+; |reg_file|RD_Data_2[3]                                                     ; |reg_file|RD_Data_2[3]                                                     ; padio            ;
+; |reg_file|RD_Data_2[4]                                                     ; |reg_file|RD_Data_2[4]                                                     ; padio            ;
+; |reg_file|RD_Data_2[5]                                                     ; |reg_file|RD_Data_2[5]                                                     ; padio            ;
+; |reg_file|RD_Data_2[6]                                                     ; |reg_file|RD_Data_2[6]                                                     ; padio            ;
+; |reg_file|WR_EN                                                            ; |reg_file|WR_EN~corein                                                     ; combout          ;
+; |reg_file|clock                                                            ; |reg_file|clock~corein                                                     ; combout          ;
+; |reg_file|ADDR_3[0]                                                        ; |reg_file|ADDR_3[0]~corein                                                 ; combout          ;
+; |reg_file|ADDR_3[1]                                                        ; |reg_file|ADDR_3[1]~corein                                                 ; combout          ;
+; |reg_file|ADDR_3[2]                                                        ; |reg_file|ADDR_3[2]~corein                                                 ; combout          ;
+; |reg_file|ADDR_3[3]                                                        ; |reg_file|ADDR_3[3]~corein                                                 ; combout          ;
+; |reg_file|ADDR_3[4]                                                        ; |reg_file|ADDR_3[4]~corein                                                 ; combout          ;
+; |reg_file|ADDR_1[0]                                                        ; |reg_file|ADDR_1[0]~corein                                                 ; combout          ;
+; |reg_file|ADDR_1[1]                                                        ; |reg_file|ADDR_1[1]~corein                                                 ; combout          ;
+; |reg_file|ADDR_1[2]                                                        ; |reg_file|ADDR_1[2]~corein                                                 ; combout          ;
+; |reg_file|ADDR_1[3]                                                        ; |reg_file|ADDR_1[3]~corein                                                 ; combout          ;
+; |reg_file|ADDR_1[4]                                                        ; |reg_file|ADDR_1[4]~corein                                                 ; combout          ;
+; |reg_file|WR_Data_3[3]                                                     ; |reg_file|WR_Data_3[3]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[4]                                                     ; |reg_file|WR_Data_3[4]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[5]                                                     ; |reg_file|WR_Data_3[5]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[6]                                                     ; |reg_file|WR_Data_3[6]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[7]                                                     ; |reg_file|WR_Data_3[7]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[8]                                                     ; |reg_file|WR_Data_3[8]~corein                                              ; combout          ;
+; |reg_file|ADDR_2[0]                                                        ; |reg_file|ADDR_2[0]~corein                                                 ; combout          ;
+; |reg_file|ADDR_2[1]                                                        ; |reg_file|ADDR_2[1]~corein                                                 ; combout          ;
+; |reg_file|ADDR_2[2]                                                        ; |reg_file|ADDR_2[2]~corein                                                 ; combout          ;
+; |reg_file|ADDR_2[3]                                                        ; |reg_file|ADDR_2[3]~corein                                                 ; combout          ;
+; |reg_file|ADDR_2[4]                                                        ; |reg_file|ADDR_2[4]~corein                                                 ; combout          ;
+; |reg_file|clock~clkctrl                                                    ; |reg_file|clock~clkctrl                                                    ; outclk           ;
++----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                    ;
++----------------------------------------------------------------------------+-----------------------------------------------------------------------------+------------------+
+; Node Name                                                                  ; Output Port Name                                                            ; Output Port Type ;
++----------------------------------------------------------------------------+-----------------------------------------------------------------------------+------------------+
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0  ; portbdataout0    ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a1  ; portbdataout1    ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a2  ; portbdataout2    ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a7  ; portbdataout7    ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a8  ; portbdataout8    ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a9  ; portbdataout9    ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a10 ; portbdataout10   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a11 ; portbdataout11   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a12 ; portbdataout12   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a13 ; portbdataout13   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a14 ; portbdataout14   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a15 ; portbdataout15   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a16 ; portbdataout16   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a17 ; portbdataout17   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a18 ; portbdataout18   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a19 ; portbdataout19   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a20 ; portbdataout20   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a21 ; portbdataout21   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a22 ; portbdataout22   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a23 ; portbdataout23   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a24 ; portbdataout24   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a25 ; portbdataout25   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a26 ; portbdataout26   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a27 ; portbdataout27   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a28 ; portbdataout28   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a29 ; portbdataout29   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a30 ; portbdataout30   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a31 ; portbdataout31   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0  ; portbdataout0    ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a1  ; portbdataout1    ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a2  ; portbdataout2    ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a7  ; portbdataout7    ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a8  ; portbdataout8    ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a9  ; portbdataout9    ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a10 ; portbdataout10   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a11 ; portbdataout11   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a12 ; portbdataout12   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a13 ; portbdataout13   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a14 ; portbdataout14   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a15 ; portbdataout15   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a16 ; portbdataout16   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a17 ; portbdataout17   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a18 ; portbdataout18   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a19 ; portbdataout19   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a20 ; portbdataout20   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a21 ; portbdataout21   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a22 ; portbdataout22   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a23 ; portbdataout23   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a24 ; portbdataout24   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a25 ; portbdataout25   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a26 ; portbdataout26   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a27 ; portbdataout27   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a28 ; portbdataout28   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a29 ; portbdataout29   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a30 ; portbdataout30   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a31 ; portbdataout31   ;
+; |reg_file|RD_Data_1[0]                                                     ; |reg_file|RD_Data_1[0]                                                      ; padio            ;
+; |reg_file|RD_Data_1[1]                                                     ; |reg_file|RD_Data_1[1]                                                      ; padio            ;
+; |reg_file|RD_Data_1[2]                                                     ; |reg_file|RD_Data_1[2]                                                      ; padio            ;
+; |reg_file|RD_Data_1[7]                                                     ; |reg_file|RD_Data_1[7]                                                      ; padio            ;
+; |reg_file|RD_Data_1[8]                                                     ; |reg_file|RD_Data_1[8]                                                      ; padio            ;
+; |reg_file|RD_Data_1[9]                                                     ; |reg_file|RD_Data_1[9]                                                      ; padio            ;
+; |reg_file|RD_Data_1[10]                                                    ; |reg_file|RD_Data_1[10]                                                     ; padio            ;
+; |reg_file|RD_Data_1[11]                                                    ; |reg_file|RD_Data_1[11]                                                     ; padio            ;
+; |reg_file|RD_Data_1[12]                                                    ; |reg_file|RD_Data_1[12]                                                     ; padio            ;
+; |reg_file|RD_Data_1[13]                                                    ; |reg_file|RD_Data_1[13]                                                     ; padio            ;
+; |reg_file|RD_Data_1[14]                                                    ; |reg_file|RD_Data_1[14]                                                     ; padio            ;
+; |reg_file|RD_Data_1[15]                                                    ; |reg_file|RD_Data_1[15]                                                     ; padio            ;
+; |reg_file|RD_Data_1[16]                                                    ; |reg_file|RD_Data_1[16]                                                     ; padio            ;
+; |reg_file|RD_Data_1[17]                                                    ; |reg_file|RD_Data_1[17]                                                     ; padio            ;
+; |reg_file|RD_Data_1[18]                                                    ; |reg_file|RD_Data_1[18]                                                     ; padio            ;
+; |reg_file|RD_Data_1[19]                                                    ; |reg_file|RD_Data_1[19]                                                     ; padio            ;
+; |reg_file|RD_Data_1[20]                                                    ; |reg_file|RD_Data_1[20]                                                     ; padio            ;
+; |reg_file|RD_Data_1[21]                                                    ; |reg_file|RD_Data_1[21]                                                     ; padio            ;
+; |reg_file|RD_Data_1[22]                                                    ; |reg_file|RD_Data_1[22]                                                     ; padio            ;
+; |reg_file|RD_Data_1[23]                                                    ; |reg_file|RD_Data_1[23]                                                     ; padio            ;
+; |reg_file|RD_Data_1[24]                                                    ; |reg_file|RD_Data_1[24]                                                     ; padio            ;
+; |reg_file|RD_Data_1[25]                                                    ; |reg_file|RD_Data_1[25]                                                     ; padio            ;
+; |reg_file|RD_Data_1[26]                                                    ; |reg_file|RD_Data_1[26]                                                     ; padio            ;
+; |reg_file|RD_Data_1[27]                                                    ; |reg_file|RD_Data_1[27]                                                     ; padio            ;
+; |reg_file|RD_Data_1[28]                                                    ; |reg_file|RD_Data_1[28]                                                     ; padio            ;
+; |reg_file|RD_Data_1[29]                                                    ; |reg_file|RD_Data_1[29]                                                     ; padio            ;
+; |reg_file|RD_Data_1[30]                                                    ; |reg_file|RD_Data_1[30]                                                     ; padio            ;
+; |reg_file|RD_Data_1[31]                                                    ; |reg_file|RD_Data_1[31]                                                     ; padio            ;
+; |reg_file|RD_Data_2[0]                                                     ; |reg_file|RD_Data_2[0]                                                      ; padio            ;
+; |reg_file|RD_Data_2[1]                                                     ; |reg_file|RD_Data_2[1]                                                      ; padio            ;
+; |reg_file|RD_Data_2[2]                                                     ; |reg_file|RD_Data_2[2]                                                      ; padio            ;
+; |reg_file|RD_Data_2[7]                                                     ; |reg_file|RD_Data_2[7]                                                      ; padio            ;
+; |reg_file|RD_Data_2[8]                                                     ; |reg_file|RD_Data_2[8]                                                      ; padio            ;
+; |reg_file|RD_Data_2[9]                                                     ; |reg_file|RD_Data_2[9]                                                      ; padio            ;
+; |reg_file|RD_Data_2[10]                                                    ; |reg_file|RD_Data_2[10]                                                     ; padio            ;
+; |reg_file|RD_Data_2[11]                                                    ; |reg_file|RD_Data_2[11]                                                     ; padio            ;
+; |reg_file|RD_Data_2[12]                                                    ; |reg_file|RD_Data_2[12]                                                     ; padio            ;
+; |reg_file|RD_Data_2[13]                                                    ; |reg_file|RD_Data_2[13]                                                     ; padio            ;
+; |reg_file|RD_Data_2[14]                                                    ; |reg_file|RD_Data_2[14]                                                     ; padio            ;
+; |reg_file|RD_Data_2[15]                                                    ; |reg_file|RD_Data_2[15]                                                     ; padio            ;
+; |reg_file|RD_Data_2[16]                                                    ; |reg_file|RD_Data_2[16]                                                     ; padio            ;
+; |reg_file|RD_Data_2[17]                                                    ; |reg_file|RD_Data_2[17]                                                     ; padio            ;
+; |reg_file|RD_Data_2[18]                                                    ; |reg_file|RD_Data_2[18]                                                     ; padio            ;
+; |reg_file|RD_Data_2[19]                                                    ; |reg_file|RD_Data_2[19]                                                     ; padio            ;
+; |reg_file|RD_Data_2[20]                                                    ; |reg_file|RD_Data_2[20]                                                     ; padio            ;
+; |reg_file|RD_Data_2[21]                                                    ; |reg_file|RD_Data_2[21]                                                     ; padio            ;
+; |reg_file|RD_Data_2[22]                                                    ; |reg_file|RD_Data_2[22]                                                     ; padio            ;
+; |reg_file|RD_Data_2[23]                                                    ; |reg_file|RD_Data_2[23]                                                     ; padio            ;
+; |reg_file|RD_Data_2[24]                                                    ; |reg_file|RD_Data_2[24]                                                     ; padio            ;
+; |reg_file|RD_Data_2[25]                                                    ; |reg_file|RD_Data_2[25]                                                     ; padio            ;
+; |reg_file|RD_Data_2[26]                                                    ; |reg_file|RD_Data_2[26]                                                     ; padio            ;
+; |reg_file|RD_Data_2[27]                                                    ; |reg_file|RD_Data_2[27]                                                     ; padio            ;
+; |reg_file|RD_Data_2[28]                                                    ; |reg_file|RD_Data_2[28]                                                     ; padio            ;
+; |reg_file|RD_Data_2[29]                                                    ; |reg_file|RD_Data_2[29]                                                     ; padio            ;
+; |reg_file|RD_Data_2[30]                                                    ; |reg_file|RD_Data_2[30]                                                     ; padio            ;
+; |reg_file|RD_Data_2[31]                                                    ; |reg_file|RD_Data_2[31]                                                     ; padio            ;
+; |reg_file|WR_Data_3[0]                                                     ; |reg_file|WR_Data_3[0]~corein                                               ; combout          ;
+; |reg_file|WR_Data_3[1]                                                     ; |reg_file|WR_Data_3[1]~corein                                               ; combout          ;
+; |reg_file|WR_Data_3[2]                                                     ; |reg_file|WR_Data_3[2]~corein                                               ; combout          ;
+; |reg_file|WR_Data_3[10]                                                    ; |reg_file|WR_Data_3[10]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[11]                                                    ; |reg_file|WR_Data_3[11]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[12]                                                    ; |reg_file|WR_Data_3[12]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[13]                                                    ; |reg_file|WR_Data_3[13]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[14]                                                    ; |reg_file|WR_Data_3[14]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[15]                                                    ; |reg_file|WR_Data_3[15]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[16]                                                    ; |reg_file|WR_Data_3[16]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[17]                                                    ; |reg_file|WR_Data_3[17]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[18]                                                    ; |reg_file|WR_Data_3[18]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[19]                                                    ; |reg_file|WR_Data_3[19]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[20]                                                    ; |reg_file|WR_Data_3[20]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[21]                                                    ; |reg_file|WR_Data_3[21]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[22]                                                    ; |reg_file|WR_Data_3[22]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[23]                                                    ; |reg_file|WR_Data_3[23]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[24]                                                    ; |reg_file|WR_Data_3[24]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[25]                                                    ; |reg_file|WR_Data_3[25]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[26]                                                    ; |reg_file|WR_Data_3[26]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[27]                                                    ; |reg_file|WR_Data_3[27]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[28]                                                    ; |reg_file|WR_Data_3[28]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[29]                                                    ; |reg_file|WR_Data_3[29]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[30]                                                    ; |reg_file|WR_Data_3[30]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[31]                                                    ; |reg_file|WR_Data_3[31]~corein                                              ; combout          ;
++----------------------------------------------------------------------------+-----------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                    ;
++----------------------------------------------------------------------------+-----------------------------------------------------------------------------+------------------+
+; Node Name                                                                  ; Output Port Name                                                            ; Output Port Type ;
++----------------------------------------------------------------------------+-----------------------------------------------------------------------------+------------------+
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0  ; portbdataout0    ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a1  ; portbdataout1    ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a2  ; portbdataout2    ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a7  ; portbdataout7    ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a8  ; portbdataout8    ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a9  ; portbdataout9    ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a10 ; portbdataout10   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a11 ; portbdataout11   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a12 ; portbdataout12   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a13 ; portbdataout13   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a14 ; portbdataout14   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a15 ; portbdataout15   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a16 ; portbdataout16   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a17 ; portbdataout17   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a18 ; portbdataout18   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a19 ; portbdataout19   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a20 ; portbdataout20   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a21 ; portbdataout21   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a22 ; portbdataout22   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a23 ; portbdataout23   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a24 ; portbdataout24   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a25 ; portbdataout25   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a26 ; portbdataout26   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a27 ; portbdataout27   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a28 ; portbdataout28   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a29 ; portbdataout29   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a30 ; portbdataout30   ;
+; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_0|altsyncram_ikd1:auto_generated|ram_block1a31 ; portbdataout31   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0  ; portbdataout0    ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a1  ; portbdataout1    ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a2  ; portbdataout2    ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a7  ; portbdataout7    ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a8  ; portbdataout8    ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a9  ; portbdataout9    ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a10 ; portbdataout10   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a11 ; portbdataout11   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a12 ; portbdataout12   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a13 ; portbdataout13   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a14 ; portbdataout14   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a15 ; portbdataout15   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a16 ; portbdataout16   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a17 ; portbdataout17   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a18 ; portbdataout18   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a19 ; portbdataout19   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a20 ; portbdataout20   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a21 ; portbdataout21   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a22 ; portbdataout22   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a23 ; portbdataout23   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a24 ; portbdataout24   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a25 ; portbdataout25   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a26 ; portbdataout26   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a27 ; portbdataout27   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a28 ; portbdataout28   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a29 ; portbdataout29   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a30 ; portbdataout30   ;
+; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a0 ; |reg_file|altsyncram:mem_rtl_1|altsyncram_ikd1:auto_generated|ram_block1a31 ; portbdataout31   ;
+; |reg_file|RD_Data_1[0]                                                     ; |reg_file|RD_Data_1[0]                                                      ; padio            ;
+; |reg_file|RD_Data_1[1]                                                     ; |reg_file|RD_Data_1[1]                                                      ; padio            ;
+; |reg_file|RD_Data_1[2]                                                     ; |reg_file|RD_Data_1[2]                                                      ; padio            ;
+; |reg_file|RD_Data_1[7]                                                     ; |reg_file|RD_Data_1[7]                                                      ; padio            ;
+; |reg_file|RD_Data_1[8]                                                     ; |reg_file|RD_Data_1[8]                                                      ; padio            ;
+; |reg_file|RD_Data_1[9]                                                     ; |reg_file|RD_Data_1[9]                                                      ; padio            ;
+; |reg_file|RD_Data_1[10]                                                    ; |reg_file|RD_Data_1[10]                                                     ; padio            ;
+; |reg_file|RD_Data_1[11]                                                    ; |reg_file|RD_Data_1[11]                                                     ; padio            ;
+; |reg_file|RD_Data_1[12]                                                    ; |reg_file|RD_Data_1[12]                                                     ; padio            ;
+; |reg_file|RD_Data_1[13]                                                    ; |reg_file|RD_Data_1[13]                                                     ; padio            ;
+; |reg_file|RD_Data_1[14]                                                    ; |reg_file|RD_Data_1[14]                                                     ; padio            ;
+; |reg_file|RD_Data_1[15]                                                    ; |reg_file|RD_Data_1[15]                                                     ; padio            ;
+; |reg_file|RD_Data_1[16]                                                    ; |reg_file|RD_Data_1[16]                                                     ; padio            ;
+; |reg_file|RD_Data_1[17]                                                    ; |reg_file|RD_Data_1[17]                                                     ; padio            ;
+; |reg_file|RD_Data_1[18]                                                    ; |reg_file|RD_Data_1[18]                                                     ; padio            ;
+; |reg_file|RD_Data_1[19]                                                    ; |reg_file|RD_Data_1[19]                                                     ; padio            ;
+; |reg_file|RD_Data_1[20]                                                    ; |reg_file|RD_Data_1[20]                                                     ; padio            ;
+; |reg_file|RD_Data_1[21]                                                    ; |reg_file|RD_Data_1[21]                                                     ; padio            ;
+; |reg_file|RD_Data_1[22]                                                    ; |reg_file|RD_Data_1[22]                                                     ; padio            ;
+; |reg_file|RD_Data_1[23]                                                    ; |reg_file|RD_Data_1[23]                                                     ; padio            ;
+; |reg_file|RD_Data_1[24]                                                    ; |reg_file|RD_Data_1[24]                                                     ; padio            ;
+; |reg_file|RD_Data_1[25]                                                    ; |reg_file|RD_Data_1[25]                                                     ; padio            ;
+; |reg_file|RD_Data_1[26]                                                    ; |reg_file|RD_Data_1[26]                                                     ; padio            ;
+; |reg_file|RD_Data_1[27]                                                    ; |reg_file|RD_Data_1[27]                                                     ; padio            ;
+; |reg_file|RD_Data_1[28]                                                    ; |reg_file|RD_Data_1[28]                                                     ; padio            ;
+; |reg_file|RD_Data_1[29]                                                    ; |reg_file|RD_Data_1[29]                                                     ; padio            ;
+; |reg_file|RD_Data_1[30]                                                    ; |reg_file|RD_Data_1[30]                                                     ; padio            ;
+; |reg_file|RD_Data_1[31]                                                    ; |reg_file|RD_Data_1[31]                                                     ; padio            ;
+; |reg_file|RD_Data_2[0]                                                     ; |reg_file|RD_Data_2[0]                                                      ; padio            ;
+; |reg_file|RD_Data_2[1]                                                     ; |reg_file|RD_Data_2[1]                                                      ; padio            ;
+; |reg_file|RD_Data_2[2]                                                     ; |reg_file|RD_Data_2[2]                                                      ; padio            ;
+; |reg_file|RD_Data_2[7]                                                     ; |reg_file|RD_Data_2[7]                                                      ; padio            ;
+; |reg_file|RD_Data_2[8]                                                     ; |reg_file|RD_Data_2[8]                                                      ; padio            ;
+; |reg_file|RD_Data_2[9]                                                     ; |reg_file|RD_Data_2[9]                                                      ; padio            ;
+; |reg_file|RD_Data_2[10]                                                    ; |reg_file|RD_Data_2[10]                                                     ; padio            ;
+; |reg_file|RD_Data_2[11]                                                    ; |reg_file|RD_Data_2[11]                                                     ; padio            ;
+; |reg_file|RD_Data_2[12]                                                    ; |reg_file|RD_Data_2[12]                                                     ; padio            ;
+; |reg_file|RD_Data_2[13]                                                    ; |reg_file|RD_Data_2[13]                                                     ; padio            ;
+; |reg_file|RD_Data_2[14]                                                    ; |reg_file|RD_Data_2[14]                                                     ; padio            ;
+; |reg_file|RD_Data_2[15]                                                    ; |reg_file|RD_Data_2[15]                                                     ; padio            ;
+; |reg_file|RD_Data_2[16]                                                    ; |reg_file|RD_Data_2[16]                                                     ; padio            ;
+; |reg_file|RD_Data_2[17]                                                    ; |reg_file|RD_Data_2[17]                                                     ; padio            ;
+; |reg_file|RD_Data_2[18]                                                    ; |reg_file|RD_Data_2[18]                                                     ; padio            ;
+; |reg_file|RD_Data_2[19]                                                    ; |reg_file|RD_Data_2[19]                                                     ; padio            ;
+; |reg_file|RD_Data_2[20]                                                    ; |reg_file|RD_Data_2[20]                                                     ; padio            ;
+; |reg_file|RD_Data_2[21]                                                    ; |reg_file|RD_Data_2[21]                                                     ; padio            ;
+; |reg_file|RD_Data_2[22]                                                    ; |reg_file|RD_Data_2[22]                                                     ; padio            ;
+; |reg_file|RD_Data_2[23]                                                    ; |reg_file|RD_Data_2[23]                                                     ; padio            ;
+; |reg_file|RD_Data_2[24]                                                    ; |reg_file|RD_Data_2[24]                                                     ; padio            ;
+; |reg_file|RD_Data_2[25]                                                    ; |reg_file|RD_Data_2[25]                                                     ; padio            ;
+; |reg_file|RD_Data_2[26]                                                    ; |reg_file|RD_Data_2[26]                                                     ; padio            ;
+; |reg_file|RD_Data_2[27]                                                    ; |reg_file|RD_Data_2[27]                                                     ; padio            ;
+; |reg_file|RD_Data_2[28]                                                    ; |reg_file|RD_Data_2[28]                                                     ; padio            ;
+; |reg_file|RD_Data_2[29]                                                    ; |reg_file|RD_Data_2[29]                                                     ; padio            ;
+; |reg_file|RD_Data_2[30]                                                    ; |reg_file|RD_Data_2[30]                                                     ; padio            ;
+; |reg_file|RD_Data_2[31]                                                    ; |reg_file|RD_Data_2[31]                                                     ; padio            ;
+; |reg_file|WR_Data_3[0]                                                     ; |reg_file|WR_Data_3[0]~corein                                               ; combout          ;
+; |reg_file|WR_Data_3[1]                                                     ; |reg_file|WR_Data_3[1]~corein                                               ; combout          ;
+; |reg_file|WR_Data_3[2]                                                     ; |reg_file|WR_Data_3[2]~corein                                               ; combout          ;
+; |reg_file|WR_Data_3[9]                                                     ; |reg_file|WR_Data_3[9]~corein                                               ; combout          ;
+; |reg_file|WR_Data_3[10]                                                    ; |reg_file|WR_Data_3[10]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[11]                                                    ; |reg_file|WR_Data_3[11]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[12]                                                    ; |reg_file|WR_Data_3[12]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[13]                                                    ; |reg_file|WR_Data_3[13]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[14]                                                    ; |reg_file|WR_Data_3[14]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[15]                                                    ; |reg_file|WR_Data_3[15]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[16]                                                    ; |reg_file|WR_Data_3[16]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[17]                                                    ; |reg_file|WR_Data_3[17]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[18]                                                    ; |reg_file|WR_Data_3[18]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[19]                                                    ; |reg_file|WR_Data_3[19]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[20]                                                    ; |reg_file|WR_Data_3[20]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[21]                                                    ; |reg_file|WR_Data_3[21]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[22]                                                    ; |reg_file|WR_Data_3[22]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[23]                                                    ; |reg_file|WR_Data_3[23]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[24]                                                    ; |reg_file|WR_Data_3[24]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[25]                                                    ; |reg_file|WR_Data_3[25]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[26]                                                    ; |reg_file|WR_Data_3[26]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[27]                                                    ; |reg_file|WR_Data_3[27]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[28]                                                    ; |reg_file|WR_Data_3[28]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[29]                                                    ; |reg_file|WR_Data_3[29]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[30]                                                    ; |reg_file|WR_Data_3[30]~corein                                              ; combout          ;
+; |reg_file|WR_Data_3[31]                                                    ; |reg_file|WR_Data_3[31]~corein                                              ; combout          ;
++----------------------------------------------------------------------------+-----------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Wed Oct 25 14:46:34 2023
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off reg_file -c reg_file
+Info: Using vector source file "C:/Users/ASUS_ROG/Downloads/Tugas_4-20231025T063125Z-001/Tugas_4/reg_file-timing.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of reg_file-timing.vwf called reg_file.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      22.47 %
+Info: Number of transitions in simulation is 1629
+Info: Vector file reg_file-timing.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 161 megabytes
+    Info: Processing ended: Wed Oct 25 14:46:35 2023
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

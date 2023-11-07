@@ -1,0 +1,369 @@
+Simulator report for instrucMEM
+Fri Oct 27 15:27:39 2023
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------+
+; Simulator Summary                           ;
++-----------------------------+---------------+
+; Type                        ; Value         ;
++-----------------------------+---------------+
+; Simulation Start Time       ; 0 ps          ;
+; Simulation End Time         ; 1.0 us        ;
+; Simulation Netlist Size     ; 191 nodes     ;
+; Simulation Coverage         ;      76.22 %  ;
+; Total Number of Transitions ; 2951          ;
+; Simulation Breakpoints      ; 0             ;
+; Family                      ; Cyclone III   ;
+; Device                      ; EP3C120F780I7 ;
++-----------------------------+---------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                          ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+; Option                                                                                     ; Setting        ; Default Value ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+; Simulation mode                                                                            ; Timing         ; Timing        ;
+; Start time                                                                                 ; 0 ns           ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF           ;               ;
+; Vector input source                                                                        ; instrucMEM.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On             ; On            ;
+; Check outputs                                                                              ; Off            ; Off           ;
+; Report simulation coverage                                                                 ; On             ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On             ; On            ;
+; Display missing 1-value coverage report                                                    ; On             ; On            ;
+; Display missing 0-value coverage report                                                    ; On             ; On            ;
+; Detect setup and hold time violations                                                      ; Off            ; Off           ;
+; Detect glitches                                                                            ; Off            ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off            ; Off           ;
+; Generate Signal Activity File                                                              ; Off            ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off            ; Off           ;
+; Group bus channels in simulation results                                                   ; Off            ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On             ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE     ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off            ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On             ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto           ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport      ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport      ; Transport     ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      76.22 % ;
+; Total nodes checked                                 ; 191          ;
+; Total output ports checked                          ; 164          ;
+; Total output ports with complete 1/0-value coverage ; 125          ;
+; Total output ports with no 1/0-value coverage       ; 38           ;
+; Total output ports with no 1-value coverage         ; 38           ;
+; Total output ports with no 0-value coverage         ; 39           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                            ;
++----------------------------------+----------------------------------+------------------+
+; Node Name                        ; Output Port Name                 ; Output Port Type ;
++----------------------------------+----------------------------------+------------------+
+; |instrucMEM|INSTR[2]~reg0        ; |instrucMEM|INSTR[2]~reg0        ; q                ;
+; |instrucMEM|INSTR[3]~reg0        ; |instrucMEM|INSTR[3]~reg0        ; q                ;
+; |instrucMEM|INSTR[11]~reg0       ; |instrucMEM|INSTR[11]~reg0       ; q                ;
+; |instrucMEM|INSTR[12]~reg0       ; |instrucMEM|INSTR[12]~reg0       ; q                ;
+; |instrucMEM|INSTR[13]~reg0       ; |instrucMEM|INSTR[13]~reg0       ; q                ;
+; |instrucMEM|INSTR[16]~reg0       ; |instrucMEM|INSTR[16]~reg0       ; q                ;
+; |instrucMEM|INSTR[17]~reg0       ; |instrucMEM|INSTR[17]~reg0       ; q                ;
+; |instrucMEM|INSTR[18]~reg0       ; |instrucMEM|INSTR[18]~reg0       ; q                ;
+; |instrucMEM|INSTR[22]~reg0       ; |instrucMEM|INSTR[22]~reg0       ; q                ;
+; |instrucMEM|INSTR[23]~reg0       ; |instrucMEM|INSTR[23]~reg0       ; q                ;
+; |instrucMEM|INSTR[28]~reg0       ; |instrucMEM|INSTR[28]~reg0       ; q                ;
+; |instrucMEM|INSTR[0]~reg0        ; |instrucMEM|INSTR[0]~reg0        ; q                ;
+; |instrucMEM|INSTR[1]~reg0        ; |instrucMEM|INSTR[1]~reg0        ; q                ;
+; |instrucMEM|INSTR[4]~reg0        ; |instrucMEM|INSTR[4]~reg0        ; q                ;
+; |instrucMEM|INSTR[5]~reg0        ; |instrucMEM|INSTR[5]~reg0        ; q                ;
+; |instrucMEM|INSTR[6]~reg0        ; |instrucMEM|INSTR[6]~reg0        ; q                ;
+; |instrucMEM|INSTR[7]~reg0        ; |instrucMEM|INSTR[7]~reg0        ; q                ;
+; |instrucMEM|INSTR[8]~reg0        ; |instrucMEM|INSTR[8]~reg0        ; q                ;
+; |instrucMEM|INSTR[9]~reg0        ; |instrucMEM|INSTR[9]~reg0        ; q                ;
+; |instrucMEM|INSTR[10]~reg0       ; |instrucMEM|INSTR[10]~reg0       ; q                ;
+; |instrucMEM|INSTR[14]~reg0       ; |instrucMEM|INSTR[14]~reg0       ; q                ;
+; |instrucMEM|INSTR[15]~reg0       ; |instrucMEM|INSTR[15]~reg0       ; q                ;
+; |instrucMEM|INSTR[21]~reg0       ; |instrucMEM|INSTR[21]~reg0       ; q                ;
+; |instrucMEM|INSTR[26]~reg0       ; |instrucMEM|INSTR[26]~reg0       ; q                ;
+; |instrucMEM|INSTR[27]~reg0       ; |instrucMEM|INSTR[27]~reg0       ; q                ;
+; |instrucMEM|INSTR[29]~reg0       ; |instrucMEM|INSTR[29]~reg0       ; q                ;
+; |instrucMEM|INSTR[31]~reg0       ; |instrucMEM|INSTR[31]~reg0       ; q                ;
+; |instrucMEM|Mux10~0              ; |instrucMEM|Mux10~0              ; combout          ;
+; |instrucMEM|Mux17~0              ; |instrucMEM|Mux17~0              ; combout          ;
+; |instrucMEM|Mux17~1              ; |instrucMEM|Mux17~1              ; combout          ;
+; |instrucMEM|Mux16~0              ; |instrucMEM|Mux16~0              ; combout          ;
+; |instrucMEM|Mux15~0              ; |instrucMEM|Mux15~0              ; combout          ;
+; |instrucMEM|Mux14~0              ; |instrucMEM|Mux14~0              ; combout          ;
+; |instrucMEM|Mux14~1              ; |instrucMEM|Mux14~1              ; combout          ;
+; |instrucMEM|Mux13~0              ; |instrucMEM|Mux13~0              ; combout          ;
+; |instrucMEM|Mux12~0              ; |instrucMEM|Mux12~0              ; combout          ;
+; |instrucMEM|Mux11~0              ; |instrucMEM|Mux11~0              ; combout          ;
+; |instrucMEM|Mux9~0               ; |instrucMEM|Mux9~0               ; combout          ;
+; |instrucMEM|Mux8~0               ; |instrucMEM|Mux8~0               ; combout          ;
+; |instrucMEM|Mux7~0               ; |instrucMEM|Mux7~0               ; combout          ;
+; |instrucMEM|Mux6~0               ; |instrucMEM|Mux6~0               ; combout          ;
+; |instrucMEM|Mux6~1               ; |instrucMEM|Mux6~1               ; combout          ;
+; |instrucMEM|Mux5~0               ; |instrucMEM|Mux5~0               ; combout          ;
+; |instrucMEM|Mux4~0               ; |instrucMEM|Mux4~0               ; combout          ;
+; |instrucMEM|Mux0~0               ; |instrucMEM|Mux0~0               ; combout          ;
+; |instrucMEM|Mux0~1               ; |instrucMEM|Mux0~1               ; combout          ;
+; |instrucMEM|Mux3~0               ; |instrucMEM|Mux3~0               ; combout          ;
+; |instrucMEM|Mux2~0               ; |instrucMEM|Mux2~0               ; combout          ;
+; |instrucMEM|Mux2~1               ; |instrucMEM|Mux2~1               ; combout          ;
+; |instrucMEM|ADDR[5]              ; |instrucMEM|ADDR[5]              ; padout           ;
+; |instrucMEM|INSTR[0]~output      ; |instrucMEM|INSTR[0]~output      ; o                ;
+; |instrucMEM|INSTR[0]             ; |instrucMEM|INSTR[0]             ; padout           ;
+; |instrucMEM|INSTR[1]~output      ; |instrucMEM|INSTR[1]~output      ; o                ;
+; |instrucMEM|INSTR[1]             ; |instrucMEM|INSTR[1]             ; padout           ;
+; |instrucMEM|INSTR[2]~output      ; |instrucMEM|INSTR[2]~output      ; o                ;
+; |instrucMEM|INSTR[2]             ; |instrucMEM|INSTR[2]             ; padout           ;
+; |instrucMEM|INSTR[3]~output      ; |instrucMEM|INSTR[3]~output      ; o                ;
+; |instrucMEM|INSTR[3]             ; |instrucMEM|INSTR[3]             ; padout           ;
+; |instrucMEM|INSTR[4]~output      ; |instrucMEM|INSTR[4]~output      ; o                ;
+; |instrucMEM|INSTR[4]             ; |instrucMEM|INSTR[4]             ; padout           ;
+; |instrucMEM|INSTR[5]~output      ; |instrucMEM|INSTR[5]~output      ; o                ;
+; |instrucMEM|INSTR[5]             ; |instrucMEM|INSTR[5]             ; padout           ;
+; |instrucMEM|INSTR[6]~output      ; |instrucMEM|INSTR[6]~output      ; o                ;
+; |instrucMEM|INSTR[6]             ; |instrucMEM|INSTR[6]             ; padout           ;
+; |instrucMEM|INSTR[7]~output      ; |instrucMEM|INSTR[7]~output      ; o                ;
+; |instrucMEM|INSTR[7]             ; |instrucMEM|INSTR[7]             ; padout           ;
+; |instrucMEM|INSTR[8]~output      ; |instrucMEM|INSTR[8]~output      ; o                ;
+; |instrucMEM|INSTR[8]             ; |instrucMEM|INSTR[8]             ; padout           ;
+; |instrucMEM|INSTR[9]~output      ; |instrucMEM|INSTR[9]~output      ; o                ;
+; |instrucMEM|INSTR[9]             ; |instrucMEM|INSTR[9]             ; padout           ;
+; |instrucMEM|INSTR[10]~output     ; |instrucMEM|INSTR[10]~output     ; o                ;
+; |instrucMEM|INSTR[10]            ; |instrucMEM|INSTR[10]            ; padout           ;
+; |instrucMEM|INSTR[11]~output     ; |instrucMEM|INSTR[11]~output     ; o                ;
+; |instrucMEM|INSTR[11]            ; |instrucMEM|INSTR[11]            ; padout           ;
+; |instrucMEM|INSTR[12]~output     ; |instrucMEM|INSTR[12]~output     ; o                ;
+; |instrucMEM|INSTR[12]            ; |instrucMEM|INSTR[12]            ; padout           ;
+; |instrucMEM|INSTR[13]~output     ; |instrucMEM|INSTR[13]~output     ; o                ;
+; |instrucMEM|INSTR[13]            ; |instrucMEM|INSTR[13]            ; padout           ;
+; |instrucMEM|INSTR[14]~output     ; |instrucMEM|INSTR[14]~output     ; o                ;
+; |instrucMEM|INSTR[14]            ; |instrucMEM|INSTR[14]            ; padout           ;
+; |instrucMEM|INSTR[15]~output     ; |instrucMEM|INSTR[15]~output     ; o                ;
+; |instrucMEM|INSTR[15]            ; |instrucMEM|INSTR[15]            ; padout           ;
+; |instrucMEM|INSTR[16]~output     ; |instrucMEM|INSTR[16]~output     ; o                ;
+; |instrucMEM|INSTR[16]            ; |instrucMEM|INSTR[16]            ; padout           ;
+; |instrucMEM|INSTR[17]~output     ; |instrucMEM|INSTR[17]~output     ; o                ;
+; |instrucMEM|INSTR[17]            ; |instrucMEM|INSTR[17]            ; padout           ;
+; |instrucMEM|INSTR[18]~output     ; |instrucMEM|INSTR[18]~output     ; o                ;
+; |instrucMEM|INSTR[18]            ; |instrucMEM|INSTR[18]            ; padout           ;
+; |instrucMEM|INSTR[21]~output     ; |instrucMEM|INSTR[21]~output     ; o                ;
+; |instrucMEM|INSTR[21]            ; |instrucMEM|INSTR[21]            ; padout           ;
+; |instrucMEM|INSTR[22]~output     ; |instrucMEM|INSTR[22]~output     ; o                ;
+; |instrucMEM|INSTR[22]            ; |instrucMEM|INSTR[22]            ; padout           ;
+; |instrucMEM|INSTR[23]~output     ; |instrucMEM|INSTR[23]~output     ; o                ;
+; |instrucMEM|INSTR[23]            ; |instrucMEM|INSTR[23]            ; padout           ;
+; |instrucMEM|INSTR[26]~output     ; |instrucMEM|INSTR[26]~output     ; o                ;
+; |instrucMEM|INSTR[26]            ; |instrucMEM|INSTR[26]            ; padout           ;
+; |instrucMEM|INSTR[27]~output     ; |instrucMEM|INSTR[27]~output     ; o                ;
+; |instrucMEM|INSTR[27]            ; |instrucMEM|INSTR[27]            ; padout           ;
+; |instrucMEM|INSTR[28]~output     ; |instrucMEM|INSTR[28]~output     ; o                ;
+; |instrucMEM|INSTR[28]            ; |instrucMEM|INSTR[28]            ; padout           ;
+; |instrucMEM|INSTR[29]~output     ; |instrucMEM|INSTR[29]~output     ; o                ;
+; |instrucMEM|INSTR[29]            ; |instrucMEM|INSTR[29]            ; padout           ;
+; |instrucMEM|INSTR[31]~output     ; |instrucMEM|INSTR[31]~output     ; o                ;
+; |instrucMEM|INSTR[31]            ; |instrucMEM|INSTR[31]            ; padout           ;
+; |instrucMEM|ADDR[0]~input        ; |instrucMEM|ADDR[0]~input        ; o                ;
+; |instrucMEM|ADDR[0]              ; |instrucMEM|ADDR[0]              ; padout           ;
+; |instrucMEM|ADDR[3]~input        ; |instrucMEM|ADDR[3]~input        ; o                ;
+; |instrucMEM|ADDR[3]              ; |instrucMEM|ADDR[3]              ; padout           ;
+; |instrucMEM|ADDR[2]~input        ; |instrucMEM|ADDR[2]~input        ; o                ;
+; |instrucMEM|ADDR[2]              ; |instrucMEM|ADDR[2]              ; padout           ;
+; |instrucMEM|ADDR[4]~input        ; |instrucMEM|ADDR[4]~input        ; o                ;
+; |instrucMEM|ADDR[4]              ; |instrucMEM|ADDR[4]              ; padout           ;
+; |instrucMEM|clock~input          ; |instrucMEM|clock~input          ; o                ;
+; |instrucMEM|clock                ; |instrucMEM|clock                ; padout           ;
+; |instrucMEM|ADDR[1]~input        ; |instrucMEM|ADDR[1]~input        ; o                ;
+; |instrucMEM|ADDR[1]              ; |instrucMEM|ADDR[1]              ; padout           ;
+; |instrucMEM|clock~inputclkctrl   ; |instrucMEM|clock~inputclkctrl   ; outclk           ;
+; |instrucMEM|INSTR[4]~reg0feeder  ; |instrucMEM|INSTR[4]~reg0feeder  ; combout          ;
+; |instrucMEM|INSTR[6]~reg0feeder  ; |instrucMEM|INSTR[6]~reg0feeder  ; combout          ;
+; |instrucMEM|INSTR[8]~reg0feeder  ; |instrucMEM|INSTR[8]~reg0feeder  ; combout          ;
+; |instrucMEM|INSTR[15]~reg0feeder ; |instrucMEM|INSTR[15]~reg0feeder ; combout          ;
+; |instrucMEM|INSTR[14]~reg0feeder ; |instrucMEM|INSTR[14]~reg0feeder ; combout          ;
+; |instrucMEM|INSTR[10]~reg0feeder ; |instrucMEM|INSTR[10]~reg0feeder ; combout          ;
+; |instrucMEM|INSTR[9]~reg0feeder  ; |instrucMEM|INSTR[9]~reg0feeder  ; combout          ;
+; |instrucMEM|INSTR[7]~reg0feeder  ; |instrucMEM|INSTR[7]~reg0feeder  ; combout          ;
++----------------------------------+----------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                           ;
++--------------------------------+--------------------------------+------------------+
+; Node Name                      ; Output Port Name               ; Output Port Type ;
++--------------------------------+--------------------------------+------------------+
+; |instrucMEM|ADDR[7]            ; |instrucMEM|ADDR[7]            ; padout           ;
+; |instrucMEM|ADDR[8]            ; |instrucMEM|ADDR[8]            ; padout           ;
+; |instrucMEM|ADDR[9]            ; |instrucMEM|ADDR[9]            ; padout           ;
+; |instrucMEM|ADDR[10]           ; |instrucMEM|ADDR[10]           ; padout           ;
+; |instrucMEM|ADDR[11]           ; |instrucMEM|ADDR[11]           ; padout           ;
+; |instrucMEM|ADDR[12]           ; |instrucMEM|ADDR[12]           ; padout           ;
+; |instrucMEM|ADDR[13]           ; |instrucMEM|ADDR[13]           ; padout           ;
+; |instrucMEM|ADDR[14]           ; |instrucMEM|ADDR[14]           ; padout           ;
+; |instrucMEM|ADDR[15]           ; |instrucMEM|ADDR[15]           ; padout           ;
+; |instrucMEM|ADDR[16]           ; |instrucMEM|ADDR[16]           ; padout           ;
+; |instrucMEM|ADDR[17]           ; |instrucMEM|ADDR[17]           ; padout           ;
+; |instrucMEM|ADDR[18]           ; |instrucMEM|ADDR[18]           ; padout           ;
+; |instrucMEM|ADDR[19]           ; |instrucMEM|ADDR[19]           ; padout           ;
+; |instrucMEM|ADDR[20]           ; |instrucMEM|ADDR[20]           ; padout           ;
+; |instrucMEM|ADDR[21]           ; |instrucMEM|ADDR[21]           ; padout           ;
+; |instrucMEM|ADDR[22]           ; |instrucMEM|ADDR[22]           ; padout           ;
+; |instrucMEM|ADDR[23]           ; |instrucMEM|ADDR[23]           ; padout           ;
+; |instrucMEM|ADDR[24]           ; |instrucMEM|ADDR[24]           ; padout           ;
+; |instrucMEM|ADDR[25]           ; |instrucMEM|ADDR[25]           ; padout           ;
+; |instrucMEM|ADDR[26]           ; |instrucMEM|ADDR[26]           ; padout           ;
+; |instrucMEM|ADDR[27]           ; |instrucMEM|ADDR[27]           ; padout           ;
+; |instrucMEM|ADDR[28]           ; |instrucMEM|ADDR[28]           ; padout           ;
+; |instrucMEM|ADDR[29]           ; |instrucMEM|ADDR[29]           ; padout           ;
+; |instrucMEM|ADDR[30]           ; |instrucMEM|ADDR[30]           ; padout           ;
+; |instrucMEM|ADDR[31]           ; |instrucMEM|ADDR[31]           ; padout           ;
+; |instrucMEM|INSTR[19]~output   ; |instrucMEM|INSTR[19]~output   ; o                ;
+; |instrucMEM|INSTR[19]          ; |instrucMEM|INSTR[19]          ; padout           ;
+; |instrucMEM|INSTR[20]~output   ; |instrucMEM|INSTR[20]~output   ; o                ;
+; |instrucMEM|INSTR[20]          ; |instrucMEM|INSTR[20]          ; padout           ;
+; |instrucMEM|INSTR[24]~output   ; |instrucMEM|INSTR[24]~output   ; o                ;
+; |instrucMEM|INSTR[24]          ; |instrucMEM|INSTR[24]          ; padout           ;
+; |instrucMEM|INSTR[25]~output   ; |instrucMEM|INSTR[25]~output   ; o                ;
+; |instrucMEM|INSTR[25]          ; |instrucMEM|INSTR[25]          ; padout           ;
+; |instrucMEM|INSTR[30]~output   ; |instrucMEM|INSTR[30]~output   ; o                ;
+; |instrucMEM|INSTR[30]          ; |instrucMEM|INSTR[30]          ; padout           ;
+; |instrucMEM|reset~input        ; |instrucMEM|reset~input        ; o                ;
+; |instrucMEM|reset              ; |instrucMEM|reset              ; padout           ;
+; |instrucMEM|reset~inputclkctrl ; |instrucMEM|reset~inputclkctrl ; outclk           ;
++--------------------------------+--------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                           ;
++--------------------------------+--------------------------------+------------------+
+; Node Name                      ; Output Port Name               ; Output Port Type ;
++--------------------------------+--------------------------------+------------------+
+; |instrucMEM|ADDR[6]            ; |instrucMEM|ADDR[6]            ; padout           ;
+; |instrucMEM|ADDR[7]            ; |instrucMEM|ADDR[7]            ; padout           ;
+; |instrucMEM|ADDR[8]            ; |instrucMEM|ADDR[8]            ; padout           ;
+; |instrucMEM|ADDR[9]            ; |instrucMEM|ADDR[9]            ; padout           ;
+; |instrucMEM|ADDR[10]           ; |instrucMEM|ADDR[10]           ; padout           ;
+; |instrucMEM|ADDR[11]           ; |instrucMEM|ADDR[11]           ; padout           ;
+; |instrucMEM|ADDR[12]           ; |instrucMEM|ADDR[12]           ; padout           ;
+; |instrucMEM|ADDR[13]           ; |instrucMEM|ADDR[13]           ; padout           ;
+; |instrucMEM|ADDR[14]           ; |instrucMEM|ADDR[14]           ; padout           ;
+; |instrucMEM|ADDR[15]           ; |instrucMEM|ADDR[15]           ; padout           ;
+; |instrucMEM|ADDR[16]           ; |instrucMEM|ADDR[16]           ; padout           ;
+; |instrucMEM|ADDR[17]           ; |instrucMEM|ADDR[17]           ; padout           ;
+; |instrucMEM|ADDR[18]           ; |instrucMEM|ADDR[18]           ; padout           ;
+; |instrucMEM|ADDR[19]           ; |instrucMEM|ADDR[19]           ; padout           ;
+; |instrucMEM|ADDR[20]           ; |instrucMEM|ADDR[20]           ; padout           ;
+; |instrucMEM|ADDR[21]           ; |instrucMEM|ADDR[21]           ; padout           ;
+; |instrucMEM|ADDR[22]           ; |instrucMEM|ADDR[22]           ; padout           ;
+; |instrucMEM|ADDR[23]           ; |instrucMEM|ADDR[23]           ; padout           ;
+; |instrucMEM|ADDR[24]           ; |instrucMEM|ADDR[24]           ; padout           ;
+; |instrucMEM|ADDR[25]           ; |instrucMEM|ADDR[25]           ; padout           ;
+; |instrucMEM|ADDR[26]           ; |instrucMEM|ADDR[26]           ; padout           ;
+; |instrucMEM|ADDR[27]           ; |instrucMEM|ADDR[27]           ; padout           ;
+; |instrucMEM|ADDR[28]           ; |instrucMEM|ADDR[28]           ; padout           ;
+; |instrucMEM|ADDR[29]           ; |instrucMEM|ADDR[29]           ; padout           ;
+; |instrucMEM|ADDR[30]           ; |instrucMEM|ADDR[30]           ; padout           ;
+; |instrucMEM|ADDR[31]           ; |instrucMEM|ADDR[31]           ; padout           ;
+; |instrucMEM|INSTR[19]~output   ; |instrucMEM|INSTR[19]~output   ; o                ;
+; |instrucMEM|INSTR[19]          ; |instrucMEM|INSTR[19]          ; padout           ;
+; |instrucMEM|INSTR[20]~output   ; |instrucMEM|INSTR[20]~output   ; o                ;
+; |instrucMEM|INSTR[20]          ; |instrucMEM|INSTR[20]          ; padout           ;
+; |instrucMEM|INSTR[24]~output   ; |instrucMEM|INSTR[24]~output   ; o                ;
+; |instrucMEM|INSTR[24]          ; |instrucMEM|INSTR[24]          ; padout           ;
+; |instrucMEM|INSTR[25]~output   ; |instrucMEM|INSTR[25]~output   ; o                ;
+; |instrucMEM|INSTR[25]          ; |instrucMEM|INSTR[25]          ; padout           ;
+; |instrucMEM|INSTR[30]~output   ; |instrucMEM|INSTR[30]~output   ; o                ;
+; |instrucMEM|INSTR[30]          ; |instrucMEM|INSTR[30]          ; padout           ;
+; |instrucMEM|reset~input        ; |instrucMEM|reset~input        ; o                ;
+; |instrucMEM|reset              ; |instrucMEM|reset              ; padout           ;
+; |instrucMEM|reset~inputclkctrl ; |instrucMEM|reset~inputclkctrl ; outclk           ;
++--------------------------------+--------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Fri Oct 27 15:27:39 2023
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off instrucMEM -c instrucMEM
+Info: Using vector source file "E:/Zhafran Arrafi/Perkuliahan/Semester 5/Praktikum Arsikom/Folder Kerja/EL3111_3_20230920_13221079/1_Lab/Tugas_1/instrucMEM.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of instrucMEM.vwf called instrucMEM.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      76.22 %
+Info: Number of transitions in simulation is 2951
+Info: Vector file instrucMEM.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 164 megabytes
+    Info: Processing ended: Fri Oct 27 15:27:39 2023
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
