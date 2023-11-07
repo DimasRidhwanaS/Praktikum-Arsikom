@@ -1,0 +1,416 @@
+Simulator report for mux_2to1_32bit
+Tue Nov 07 11:08:27 2023
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 129 nodes    ;
+; Simulation Coverage         ;       5.43 % ;
+; Total Number of Transitions ; 691          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C70F896I8 ;
++-----------------------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                              ;
++--------------------------------------------------------------------------------------------+--------------------+---------------+
+; Option                                                                                     ; Setting            ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------------+---------------+
+; Simulation mode                                                                            ; Timing             ; Timing        ;
+; Start time                                                                                 ; 0 ns               ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF               ;               ;
+; Vector input source                                                                        ; mux_2to1_32bit.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                 ; On            ;
+; Check outputs                                                                              ; Off                ; Off           ;
+; Report simulation coverage                                                                 ; On                 ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                 ; On            ;
+; Display missing 1-value coverage report                                                    ; On                 ; On            ;
+; Display missing 0-value coverage report                                                    ; On                 ; On            ;
+; Detect setup and hold time violations                                                      ; Off                ; Off           ;
+; Detect glitches                                                                            ; Off                ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                ; Off           ;
+; Generate Signal Activity File                                                              ; Off                ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                 ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE         ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On                 ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto               ; Auto          ;
++--------------------------------------------------------------------------------------------+--------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;       5.43 % ;
+; Total nodes checked                                 ; 129          ;
+; Total output ports checked                          ; 129          ;
+; Total output ports with complete 1/0-value coverage ; 7            ;
+; Total output ports with no 1/0-value coverage       ; 122          ;
+; Total output ports with no 1-value coverage         ; 122          ;
+; Total output ports with no 0-value coverage         ; 122          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++---------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                         ;
++-----------------------+--------------------------+------------------+
+; Node Name             ; Output Port Name         ; Output Port Type ;
++-----------------------+--------------------------+------------------+
+; |mux_2to1_32bit|Y~12  ; |mux_2to1_32bit|Y~12     ; combout          ;
+; |mux_2to1_32bit|Y~16  ; |mux_2to1_32bit|Y~16     ; combout          ;
+; |mux_2to1_32bit|Y~20  ; |mux_2to1_32bit|Y~20     ; combout          ;
+; |mux_2to1_32bit|Y[12] ; |mux_2to1_32bit|Y[12]    ; padio            ;
+; |mux_2to1_32bit|Y[16] ; |mux_2to1_32bit|Y[16]    ; padio            ;
+; |mux_2to1_32bit|Y[20] ; |mux_2to1_32bit|Y[20]    ; padio            ;
+; |mux_2to1_32bit|S     ; |mux_2to1_32bit|S~corein ; combout          ;
++-----------------------+--------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++---------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                  ;
++------------------------+-------------------------------+------------------+
+; Node Name              ; Output Port Name              ; Output Port Type ;
++------------------------+-------------------------------+------------------+
+; |mux_2to1_32bit|Y~0    ; |mux_2to1_32bit|Y~0           ; combout          ;
+; |mux_2to1_32bit|Y~1    ; |mux_2to1_32bit|Y~1           ; combout          ;
+; |mux_2to1_32bit|Y~2    ; |mux_2to1_32bit|Y~2           ; combout          ;
+; |mux_2to1_32bit|Y~3    ; |mux_2to1_32bit|Y~3           ; combout          ;
+; |mux_2to1_32bit|Y~4    ; |mux_2to1_32bit|Y~4           ; combout          ;
+; |mux_2to1_32bit|Y~5    ; |mux_2to1_32bit|Y~5           ; combout          ;
+; |mux_2to1_32bit|Y~6    ; |mux_2to1_32bit|Y~6           ; combout          ;
+; |mux_2to1_32bit|Y~7    ; |mux_2to1_32bit|Y~7           ; combout          ;
+; |mux_2to1_32bit|Y~8    ; |mux_2to1_32bit|Y~8           ; combout          ;
+; |mux_2to1_32bit|Y~9    ; |mux_2to1_32bit|Y~9           ; combout          ;
+; |mux_2to1_32bit|Y~10   ; |mux_2to1_32bit|Y~10          ; combout          ;
+; |mux_2to1_32bit|Y~11   ; |mux_2to1_32bit|Y~11          ; combout          ;
+; |mux_2to1_32bit|Y~13   ; |mux_2to1_32bit|Y~13          ; combout          ;
+; |mux_2to1_32bit|Y~14   ; |mux_2to1_32bit|Y~14          ; combout          ;
+; |mux_2to1_32bit|Y~15   ; |mux_2to1_32bit|Y~15          ; combout          ;
+; |mux_2to1_32bit|Y~17   ; |mux_2to1_32bit|Y~17          ; combout          ;
+; |mux_2to1_32bit|Y~18   ; |mux_2to1_32bit|Y~18          ; combout          ;
+; |mux_2to1_32bit|Y~19   ; |mux_2to1_32bit|Y~19          ; combout          ;
+; |mux_2to1_32bit|Y~21   ; |mux_2to1_32bit|Y~21          ; combout          ;
+; |mux_2to1_32bit|Y~22   ; |mux_2to1_32bit|Y~22          ; combout          ;
+; |mux_2to1_32bit|Y~23   ; |mux_2to1_32bit|Y~23          ; combout          ;
+; |mux_2to1_32bit|Y~24   ; |mux_2to1_32bit|Y~24          ; combout          ;
+; |mux_2to1_32bit|Y~25   ; |mux_2to1_32bit|Y~25          ; combout          ;
+; |mux_2to1_32bit|Y~26   ; |mux_2to1_32bit|Y~26          ; combout          ;
+; |mux_2to1_32bit|Y~27   ; |mux_2to1_32bit|Y~27          ; combout          ;
+; |mux_2to1_32bit|Y~28   ; |mux_2to1_32bit|Y~28          ; combout          ;
+; |mux_2to1_32bit|Y~29   ; |mux_2to1_32bit|Y~29          ; combout          ;
+; |mux_2to1_32bit|Y~30   ; |mux_2to1_32bit|Y~30          ; combout          ;
+; |mux_2to1_32bit|Y~31   ; |mux_2to1_32bit|Y~31          ; combout          ;
+; |mux_2to1_32bit|Y[0]   ; |mux_2to1_32bit|Y[0]          ; padio            ;
+; |mux_2to1_32bit|Y[1]   ; |mux_2to1_32bit|Y[1]          ; padio            ;
+; |mux_2to1_32bit|Y[2]   ; |mux_2to1_32bit|Y[2]          ; padio            ;
+; |mux_2to1_32bit|Y[3]   ; |mux_2to1_32bit|Y[3]          ; padio            ;
+; |mux_2to1_32bit|Y[4]   ; |mux_2to1_32bit|Y[4]          ; padio            ;
+; |mux_2to1_32bit|Y[5]   ; |mux_2to1_32bit|Y[5]          ; padio            ;
+; |mux_2to1_32bit|Y[6]   ; |mux_2to1_32bit|Y[6]          ; padio            ;
+; |mux_2to1_32bit|Y[7]   ; |mux_2to1_32bit|Y[7]          ; padio            ;
+; |mux_2to1_32bit|Y[8]   ; |mux_2to1_32bit|Y[8]          ; padio            ;
+; |mux_2to1_32bit|Y[9]   ; |mux_2to1_32bit|Y[9]          ; padio            ;
+; |mux_2to1_32bit|Y[10]  ; |mux_2to1_32bit|Y[10]         ; padio            ;
+; |mux_2to1_32bit|Y[11]  ; |mux_2to1_32bit|Y[11]         ; padio            ;
+; |mux_2to1_32bit|Y[13]  ; |mux_2to1_32bit|Y[13]         ; padio            ;
+; |mux_2to1_32bit|Y[14]  ; |mux_2to1_32bit|Y[14]         ; padio            ;
+; |mux_2to1_32bit|Y[15]  ; |mux_2to1_32bit|Y[15]         ; padio            ;
+; |mux_2to1_32bit|Y[17]  ; |mux_2to1_32bit|Y[17]         ; padio            ;
+; |mux_2to1_32bit|Y[18]  ; |mux_2to1_32bit|Y[18]         ; padio            ;
+; |mux_2to1_32bit|Y[19]  ; |mux_2to1_32bit|Y[19]         ; padio            ;
+; |mux_2to1_32bit|Y[21]  ; |mux_2to1_32bit|Y[21]         ; padio            ;
+; |mux_2to1_32bit|Y[22]  ; |mux_2to1_32bit|Y[22]         ; padio            ;
+; |mux_2to1_32bit|Y[23]  ; |mux_2to1_32bit|Y[23]         ; padio            ;
+; |mux_2to1_32bit|Y[24]  ; |mux_2to1_32bit|Y[24]         ; padio            ;
+; |mux_2to1_32bit|Y[25]  ; |mux_2to1_32bit|Y[25]         ; padio            ;
+; |mux_2to1_32bit|Y[26]  ; |mux_2to1_32bit|Y[26]         ; padio            ;
+; |mux_2to1_32bit|Y[27]  ; |mux_2to1_32bit|Y[27]         ; padio            ;
+; |mux_2to1_32bit|Y[28]  ; |mux_2to1_32bit|Y[28]         ; padio            ;
+; |mux_2to1_32bit|Y[29]  ; |mux_2to1_32bit|Y[29]         ; padio            ;
+; |mux_2to1_32bit|Y[30]  ; |mux_2to1_32bit|Y[30]         ; padio            ;
+; |mux_2to1_32bit|Y[31]  ; |mux_2to1_32bit|Y[31]         ; padio            ;
+; |mux_2to1_32bit|D2[0]  ; |mux_2to1_32bit|D2[0]~corein  ; combout          ;
+; |mux_2to1_32bit|D1[0]  ; |mux_2to1_32bit|D1[0]~corein  ; combout          ;
+; |mux_2to1_32bit|D2[1]  ; |mux_2to1_32bit|D2[1]~corein  ; combout          ;
+; |mux_2to1_32bit|D1[1]  ; |mux_2to1_32bit|D1[1]~corein  ; combout          ;
+; |mux_2to1_32bit|D2[2]  ; |mux_2to1_32bit|D2[2]~corein  ; combout          ;
+; |mux_2to1_32bit|D1[2]  ; |mux_2to1_32bit|D1[2]~corein  ; combout          ;
+; |mux_2to1_32bit|D2[3]  ; |mux_2to1_32bit|D2[3]~corein  ; combout          ;
+; |mux_2to1_32bit|D1[3]  ; |mux_2to1_32bit|D1[3]~corein  ; combout          ;
+; |mux_2to1_32bit|D2[4]  ; |mux_2to1_32bit|D2[4]~corein  ; combout          ;
+; |mux_2to1_32bit|D1[4]  ; |mux_2to1_32bit|D1[4]~corein  ; combout          ;
+; |mux_2to1_32bit|D2[5]  ; |mux_2to1_32bit|D2[5]~corein  ; combout          ;
+; |mux_2to1_32bit|D1[5]  ; |mux_2to1_32bit|D1[5]~corein  ; combout          ;
+; |mux_2to1_32bit|D2[6]  ; |mux_2to1_32bit|D2[6]~corein  ; combout          ;
+; |mux_2to1_32bit|D1[6]  ; |mux_2to1_32bit|D1[6]~corein  ; combout          ;
+; |mux_2to1_32bit|D2[7]  ; |mux_2to1_32bit|D2[7]~corein  ; combout          ;
+; |mux_2to1_32bit|D1[7]  ; |mux_2to1_32bit|D1[7]~corein  ; combout          ;
+; |mux_2to1_32bit|D2[8]  ; |mux_2to1_32bit|D2[8]~corein  ; combout          ;
+; |mux_2to1_32bit|D1[8]  ; |mux_2to1_32bit|D1[8]~corein  ; combout          ;
+; |mux_2to1_32bit|D2[9]  ; |mux_2to1_32bit|D2[9]~corein  ; combout          ;
+; |mux_2to1_32bit|D1[9]  ; |mux_2to1_32bit|D1[9]~corein  ; combout          ;
+; |mux_2to1_32bit|D2[10] ; |mux_2to1_32bit|D2[10]~corein ; combout          ;
+; |mux_2to1_32bit|D1[10] ; |mux_2to1_32bit|D1[10]~corein ; combout          ;
+; |mux_2to1_32bit|D2[11] ; |mux_2to1_32bit|D2[11]~corein ; combout          ;
+; |mux_2to1_32bit|D1[11] ; |mux_2to1_32bit|D1[11]~corein ; combout          ;
+; |mux_2to1_32bit|D2[12] ; |mux_2to1_32bit|D2[12]~corein ; combout          ;
+; |mux_2to1_32bit|D1[12] ; |mux_2to1_32bit|D1[12]~corein ; combout          ;
+; |mux_2to1_32bit|D2[13] ; |mux_2to1_32bit|D2[13]~corein ; combout          ;
+; |mux_2to1_32bit|D1[13] ; |mux_2to1_32bit|D1[13]~corein ; combout          ;
+; |mux_2to1_32bit|D2[14] ; |mux_2to1_32bit|D2[14]~corein ; combout          ;
+; |mux_2to1_32bit|D1[14] ; |mux_2to1_32bit|D1[14]~corein ; combout          ;
+; |mux_2to1_32bit|D2[15] ; |mux_2to1_32bit|D2[15]~corein ; combout          ;
+; |mux_2to1_32bit|D1[15] ; |mux_2to1_32bit|D1[15]~corein ; combout          ;
+; |mux_2to1_32bit|D2[16] ; |mux_2to1_32bit|D2[16]~corein ; combout          ;
+; |mux_2to1_32bit|D1[16] ; |mux_2to1_32bit|D1[16]~corein ; combout          ;
+; |mux_2to1_32bit|D2[17] ; |mux_2to1_32bit|D2[17]~corein ; combout          ;
+; |mux_2to1_32bit|D1[17] ; |mux_2to1_32bit|D1[17]~corein ; combout          ;
+; |mux_2to1_32bit|D2[18] ; |mux_2to1_32bit|D2[18]~corein ; combout          ;
+; |mux_2to1_32bit|D1[18] ; |mux_2to1_32bit|D1[18]~corein ; combout          ;
+; |mux_2to1_32bit|D2[19] ; |mux_2to1_32bit|D2[19]~corein ; combout          ;
+; |mux_2to1_32bit|D1[19] ; |mux_2to1_32bit|D1[19]~corein ; combout          ;
+; |mux_2to1_32bit|D2[20] ; |mux_2to1_32bit|D2[20]~corein ; combout          ;
+; |mux_2to1_32bit|D1[20] ; |mux_2to1_32bit|D1[20]~corein ; combout          ;
+; |mux_2to1_32bit|D2[21] ; |mux_2to1_32bit|D2[21]~corein ; combout          ;
+; |mux_2to1_32bit|D1[21] ; |mux_2to1_32bit|D1[21]~corein ; combout          ;
+; |mux_2to1_32bit|D2[22] ; |mux_2to1_32bit|D2[22]~corein ; combout          ;
+; |mux_2to1_32bit|D1[22] ; |mux_2to1_32bit|D1[22]~corein ; combout          ;
+; |mux_2to1_32bit|D2[23] ; |mux_2to1_32bit|D2[23]~corein ; combout          ;
+; |mux_2to1_32bit|D1[23] ; |mux_2to1_32bit|D1[23]~corein ; combout          ;
+; |mux_2to1_32bit|D2[24] ; |mux_2to1_32bit|D2[24]~corein ; combout          ;
+; |mux_2to1_32bit|D1[24] ; |mux_2to1_32bit|D1[24]~corein ; combout          ;
+; |mux_2to1_32bit|D2[25] ; |mux_2to1_32bit|D2[25]~corein ; combout          ;
+; |mux_2to1_32bit|D1[25] ; |mux_2to1_32bit|D1[25]~corein ; combout          ;
+; |mux_2to1_32bit|D2[26] ; |mux_2to1_32bit|D2[26]~corein ; combout          ;
+; |mux_2to1_32bit|D1[26] ; |mux_2to1_32bit|D1[26]~corein ; combout          ;
+; |mux_2to1_32bit|D2[27] ; |mux_2to1_32bit|D2[27]~corein ; combout          ;
+; |mux_2to1_32bit|D1[27] ; |mux_2to1_32bit|D1[27]~corein ; combout          ;
+; |mux_2to1_32bit|D2[28] ; |mux_2to1_32bit|D2[28]~corein ; combout          ;
+; |mux_2to1_32bit|D1[28] ; |mux_2to1_32bit|D1[28]~corein ; combout          ;
+; |mux_2to1_32bit|D2[29] ; |mux_2to1_32bit|D2[29]~corein ; combout          ;
+; |mux_2to1_32bit|D1[29] ; |mux_2to1_32bit|D1[29]~corein ; combout          ;
+; |mux_2to1_32bit|D2[30] ; |mux_2to1_32bit|D2[30]~corein ; combout          ;
+; |mux_2to1_32bit|D1[30] ; |mux_2to1_32bit|D1[30]~corein ; combout          ;
+; |mux_2to1_32bit|D2[31] ; |mux_2to1_32bit|D2[31]~corein ; combout          ;
+; |mux_2to1_32bit|D1[31] ; |mux_2to1_32bit|D1[31]~corein ; combout          ;
++------------------------+-------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++---------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                  ;
++------------------------+-------------------------------+------------------+
+; Node Name              ; Output Port Name              ; Output Port Type ;
++------------------------+-------------------------------+------------------+
+; |mux_2to1_32bit|Y~0    ; |mux_2to1_32bit|Y~0           ; combout          ;
+; |mux_2to1_32bit|Y~1    ; |mux_2to1_32bit|Y~1           ; combout          ;
+; |mux_2to1_32bit|Y~2    ; |mux_2to1_32bit|Y~2           ; combout          ;
+; |mux_2to1_32bit|Y~3    ; |mux_2to1_32bit|Y~3           ; combout          ;
+; |mux_2to1_32bit|Y~4    ; |mux_2to1_32bit|Y~4           ; combout          ;
+; |mux_2to1_32bit|Y~5    ; |mux_2to1_32bit|Y~5           ; combout          ;
+; |mux_2to1_32bit|Y~6    ; |mux_2to1_32bit|Y~6           ; combout          ;
+; |mux_2to1_32bit|Y~7    ; |mux_2to1_32bit|Y~7           ; combout          ;
+; |mux_2to1_32bit|Y~8    ; |mux_2to1_32bit|Y~8           ; combout          ;
+; |mux_2to1_32bit|Y~9    ; |mux_2to1_32bit|Y~9           ; combout          ;
+; |mux_2to1_32bit|Y~10   ; |mux_2to1_32bit|Y~10          ; combout          ;
+; |mux_2to1_32bit|Y~11   ; |mux_2to1_32bit|Y~11          ; combout          ;
+; |mux_2to1_32bit|Y~13   ; |mux_2to1_32bit|Y~13          ; combout          ;
+; |mux_2to1_32bit|Y~14   ; |mux_2to1_32bit|Y~14          ; combout          ;
+; |mux_2to1_32bit|Y~15   ; |mux_2to1_32bit|Y~15          ; combout          ;
+; |mux_2to1_32bit|Y~17   ; |mux_2to1_32bit|Y~17          ; combout          ;
+; |mux_2to1_32bit|Y~18   ; |mux_2to1_32bit|Y~18          ; combout          ;
+; |mux_2to1_32bit|Y~19   ; |mux_2to1_32bit|Y~19          ; combout          ;
+; |mux_2to1_32bit|Y~21   ; |mux_2to1_32bit|Y~21          ; combout          ;
+; |mux_2to1_32bit|Y~22   ; |mux_2to1_32bit|Y~22          ; combout          ;
+; |mux_2to1_32bit|Y~23   ; |mux_2to1_32bit|Y~23          ; combout          ;
+; |mux_2to1_32bit|Y~24   ; |mux_2to1_32bit|Y~24          ; combout          ;
+; |mux_2to1_32bit|Y~25   ; |mux_2to1_32bit|Y~25          ; combout          ;
+; |mux_2to1_32bit|Y~26   ; |mux_2to1_32bit|Y~26          ; combout          ;
+; |mux_2to1_32bit|Y~27   ; |mux_2to1_32bit|Y~27          ; combout          ;
+; |mux_2to1_32bit|Y~28   ; |mux_2to1_32bit|Y~28          ; combout          ;
+; |mux_2to1_32bit|Y~29   ; |mux_2to1_32bit|Y~29          ; combout          ;
+; |mux_2to1_32bit|Y~30   ; |mux_2to1_32bit|Y~30          ; combout          ;
+; |mux_2to1_32bit|Y~31   ; |mux_2to1_32bit|Y~31          ; combout          ;
+; |mux_2to1_32bit|Y[0]   ; |mux_2to1_32bit|Y[0]          ; padio            ;
+; |mux_2to1_32bit|Y[1]   ; |mux_2to1_32bit|Y[1]          ; padio            ;
+; |mux_2to1_32bit|Y[2]   ; |mux_2to1_32bit|Y[2]          ; padio            ;
+; |mux_2to1_32bit|Y[3]   ; |mux_2to1_32bit|Y[3]          ; padio            ;
+; |mux_2to1_32bit|Y[4]   ; |mux_2to1_32bit|Y[4]          ; padio            ;
+; |mux_2to1_32bit|Y[5]   ; |mux_2to1_32bit|Y[5]          ; padio            ;
+; |mux_2to1_32bit|Y[6]   ; |mux_2to1_32bit|Y[6]          ; padio            ;
+; |mux_2to1_32bit|Y[7]   ; |mux_2to1_32bit|Y[7]          ; padio            ;
+; |mux_2to1_32bit|Y[8]   ; |mux_2to1_32bit|Y[8]          ; padio            ;
+; |mux_2to1_32bit|Y[9]   ; |mux_2to1_32bit|Y[9]          ; padio            ;
+; |mux_2to1_32bit|Y[10]  ; |mux_2to1_32bit|Y[10]         ; padio            ;
+; |mux_2to1_32bit|Y[11]  ; |mux_2to1_32bit|Y[11]         ; padio            ;
+; |mux_2to1_32bit|Y[13]  ; |mux_2to1_32bit|Y[13]         ; padio            ;
+; |mux_2to1_32bit|Y[14]  ; |mux_2to1_32bit|Y[14]         ; padio            ;
+; |mux_2to1_32bit|Y[15]  ; |mux_2to1_32bit|Y[15]         ; padio            ;
+; |mux_2to1_32bit|Y[17]  ; |mux_2to1_32bit|Y[17]         ; padio            ;
+; |mux_2to1_32bit|Y[18]  ; |mux_2to1_32bit|Y[18]         ; padio            ;
+; |mux_2to1_32bit|Y[19]  ; |mux_2to1_32bit|Y[19]         ; padio            ;
+; |mux_2to1_32bit|Y[21]  ; |mux_2to1_32bit|Y[21]         ; padio            ;
+; |mux_2to1_32bit|Y[22]  ; |mux_2to1_32bit|Y[22]         ; padio            ;
+; |mux_2to1_32bit|Y[23]  ; |mux_2to1_32bit|Y[23]         ; padio            ;
+; |mux_2to1_32bit|Y[24]  ; |mux_2to1_32bit|Y[24]         ; padio            ;
+; |mux_2to1_32bit|Y[25]  ; |mux_2to1_32bit|Y[25]         ; padio            ;
+; |mux_2to1_32bit|Y[26]  ; |mux_2to1_32bit|Y[26]         ; padio            ;
+; |mux_2to1_32bit|Y[27]  ; |mux_2to1_32bit|Y[27]         ; padio            ;
+; |mux_2to1_32bit|Y[28]  ; |mux_2to1_32bit|Y[28]         ; padio            ;
+; |mux_2to1_32bit|Y[29]  ; |mux_2to1_32bit|Y[29]         ; padio            ;
+; |mux_2to1_32bit|Y[30]  ; |mux_2to1_32bit|Y[30]         ; padio            ;
+; |mux_2to1_32bit|Y[31]  ; |mux_2to1_32bit|Y[31]         ; padio            ;
+; |mux_2to1_32bit|D2[0]  ; |mux_2to1_32bit|D2[0]~corein  ; combout          ;
+; |mux_2to1_32bit|D1[0]  ; |mux_2to1_32bit|D1[0]~corein  ; combout          ;
+; |mux_2to1_32bit|D2[1]  ; |mux_2to1_32bit|D2[1]~corein  ; combout          ;
+; |mux_2to1_32bit|D1[1]  ; |mux_2to1_32bit|D1[1]~corein  ; combout          ;
+; |mux_2to1_32bit|D2[2]  ; |mux_2to1_32bit|D2[2]~corein  ; combout          ;
+; |mux_2to1_32bit|D1[2]  ; |mux_2to1_32bit|D1[2]~corein  ; combout          ;
+; |mux_2to1_32bit|D2[3]  ; |mux_2to1_32bit|D2[3]~corein  ; combout          ;
+; |mux_2to1_32bit|D1[3]  ; |mux_2to1_32bit|D1[3]~corein  ; combout          ;
+; |mux_2to1_32bit|D2[4]  ; |mux_2to1_32bit|D2[4]~corein  ; combout          ;
+; |mux_2to1_32bit|D1[4]  ; |mux_2to1_32bit|D1[4]~corein  ; combout          ;
+; |mux_2to1_32bit|D2[5]  ; |mux_2to1_32bit|D2[5]~corein  ; combout          ;
+; |mux_2to1_32bit|D1[5]  ; |mux_2to1_32bit|D1[5]~corein  ; combout          ;
+; |mux_2to1_32bit|D2[6]  ; |mux_2to1_32bit|D2[6]~corein  ; combout          ;
+; |mux_2to1_32bit|D1[6]  ; |mux_2to1_32bit|D1[6]~corein  ; combout          ;
+; |mux_2to1_32bit|D2[7]  ; |mux_2to1_32bit|D2[7]~corein  ; combout          ;
+; |mux_2to1_32bit|D1[7]  ; |mux_2to1_32bit|D1[7]~corein  ; combout          ;
+; |mux_2to1_32bit|D2[8]  ; |mux_2to1_32bit|D2[8]~corein  ; combout          ;
+; |mux_2to1_32bit|D1[8]  ; |mux_2to1_32bit|D1[8]~corein  ; combout          ;
+; |mux_2to1_32bit|D2[9]  ; |mux_2to1_32bit|D2[9]~corein  ; combout          ;
+; |mux_2to1_32bit|D1[9]  ; |mux_2to1_32bit|D1[9]~corein  ; combout          ;
+; |mux_2to1_32bit|D2[10] ; |mux_2to1_32bit|D2[10]~corein ; combout          ;
+; |mux_2to1_32bit|D1[10] ; |mux_2to1_32bit|D1[10]~corein ; combout          ;
+; |mux_2to1_32bit|D2[11] ; |mux_2to1_32bit|D2[11]~corein ; combout          ;
+; |mux_2to1_32bit|D1[11] ; |mux_2to1_32bit|D1[11]~corein ; combout          ;
+; |mux_2to1_32bit|D2[12] ; |mux_2to1_32bit|D2[12]~corein ; combout          ;
+; |mux_2to1_32bit|D1[12] ; |mux_2to1_32bit|D1[12]~corein ; combout          ;
+; |mux_2to1_32bit|D2[13] ; |mux_2to1_32bit|D2[13]~corein ; combout          ;
+; |mux_2to1_32bit|D1[13] ; |mux_2to1_32bit|D1[13]~corein ; combout          ;
+; |mux_2to1_32bit|D2[14] ; |mux_2to1_32bit|D2[14]~corein ; combout          ;
+; |mux_2to1_32bit|D1[14] ; |mux_2to1_32bit|D1[14]~corein ; combout          ;
+; |mux_2to1_32bit|D2[15] ; |mux_2to1_32bit|D2[15]~corein ; combout          ;
+; |mux_2to1_32bit|D1[15] ; |mux_2to1_32bit|D1[15]~corein ; combout          ;
+; |mux_2to1_32bit|D2[16] ; |mux_2to1_32bit|D2[16]~corein ; combout          ;
+; |mux_2to1_32bit|D1[16] ; |mux_2to1_32bit|D1[16]~corein ; combout          ;
+; |mux_2to1_32bit|D2[17] ; |mux_2to1_32bit|D2[17]~corein ; combout          ;
+; |mux_2to1_32bit|D1[17] ; |mux_2to1_32bit|D1[17]~corein ; combout          ;
+; |mux_2to1_32bit|D2[18] ; |mux_2to1_32bit|D2[18]~corein ; combout          ;
+; |mux_2to1_32bit|D1[18] ; |mux_2to1_32bit|D1[18]~corein ; combout          ;
+; |mux_2to1_32bit|D2[19] ; |mux_2to1_32bit|D2[19]~corein ; combout          ;
+; |mux_2to1_32bit|D1[19] ; |mux_2to1_32bit|D1[19]~corein ; combout          ;
+; |mux_2to1_32bit|D2[20] ; |mux_2to1_32bit|D2[20]~corein ; combout          ;
+; |mux_2to1_32bit|D1[20] ; |mux_2to1_32bit|D1[20]~corein ; combout          ;
+; |mux_2to1_32bit|D2[21] ; |mux_2to1_32bit|D2[21]~corein ; combout          ;
+; |mux_2to1_32bit|D1[21] ; |mux_2to1_32bit|D1[21]~corein ; combout          ;
+; |mux_2to1_32bit|D2[22] ; |mux_2to1_32bit|D2[22]~corein ; combout          ;
+; |mux_2to1_32bit|D1[22] ; |mux_2to1_32bit|D1[22]~corein ; combout          ;
+; |mux_2to1_32bit|D2[23] ; |mux_2to1_32bit|D2[23]~corein ; combout          ;
+; |mux_2to1_32bit|D1[23] ; |mux_2to1_32bit|D1[23]~corein ; combout          ;
+; |mux_2to1_32bit|D2[24] ; |mux_2to1_32bit|D2[24]~corein ; combout          ;
+; |mux_2to1_32bit|D1[24] ; |mux_2to1_32bit|D1[24]~corein ; combout          ;
+; |mux_2to1_32bit|D2[25] ; |mux_2to1_32bit|D2[25]~corein ; combout          ;
+; |mux_2to1_32bit|D1[25] ; |mux_2to1_32bit|D1[25]~corein ; combout          ;
+; |mux_2to1_32bit|D2[26] ; |mux_2to1_32bit|D2[26]~corein ; combout          ;
+; |mux_2to1_32bit|D1[26] ; |mux_2to1_32bit|D1[26]~corein ; combout          ;
+; |mux_2to1_32bit|D2[27] ; |mux_2to1_32bit|D2[27]~corein ; combout          ;
+; |mux_2to1_32bit|D1[27] ; |mux_2to1_32bit|D1[27]~corein ; combout          ;
+; |mux_2to1_32bit|D2[28] ; |mux_2to1_32bit|D2[28]~corein ; combout          ;
+; |mux_2to1_32bit|D1[28] ; |mux_2to1_32bit|D1[28]~corein ; combout          ;
+; |mux_2to1_32bit|D2[29] ; |mux_2to1_32bit|D2[29]~corein ; combout          ;
+; |mux_2to1_32bit|D1[29] ; |mux_2to1_32bit|D1[29]~corein ; combout          ;
+; |mux_2to1_32bit|D2[30] ; |mux_2to1_32bit|D2[30]~corein ; combout          ;
+; |mux_2to1_32bit|D1[30] ; |mux_2to1_32bit|D1[30]~corein ; combout          ;
+; |mux_2to1_32bit|D2[31] ; |mux_2to1_32bit|D2[31]~corein ; combout          ;
+; |mux_2to1_32bit|D1[31] ; |mux_2to1_32bit|D1[31]~corein ; combout          ;
++------------------------+-------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Tue Nov 07 11:08:26 2023
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off mux_2to1_32bit -c mux_2to1_32bit
+Info: Using vector source file "D:/Dimas Github/Praktikum-Arsikom/EL3111_04_20231107_13221076/0_Prelab/Tugas_1/Coba/mux_2to1_32bit.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of mux_2to1_32bit.vwf called mux_2to1_32bit.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is       5.43 %
+Info: Number of transitions in simulation is 691
+Info: Vector file mux_2to1_32bit.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 152 megabytes
+    Info: Processing ended: Tue Nov 07 11:08:27 2023
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+
