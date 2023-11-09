@@ -1,0 +1,336 @@
+Simulator report for comparator
+Thu Nov 09 12:29:40 2023
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 86 nodes     ;
+; Simulation Coverage         ;       0.00 % ;
+; Total Number of Transitions ; 0            ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C70F896I8 ;
++-----------------------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                          ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+; Option                                                                                     ; Setting        ; Default Value ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+; Simulation mode                                                                            ; Timing         ; Timing        ;
+; Start time                                                                                 ; 0 ns           ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF           ;               ;
+; Vector input source                                                                        ; comparator.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On             ; On            ;
+; Check outputs                                                                              ; Off            ; Off           ;
+; Report simulation coverage                                                                 ; On             ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On             ; On            ;
+; Display missing 1-value coverage report                                                    ; On             ; On            ;
+; Display missing 0-value coverage report                                                    ; On             ; On            ;
+; Detect setup and hold time violations                                                      ; Off            ; Off           ;
+; Detect glitches                                                                            ; Off            ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off            ; Off           ;
+; Generate Signal Activity File                                                              ; Off            ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off            ; Off           ;
+; Group bus channels in simulation results                                                   ; Off            ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On             ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE     ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off            ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On             ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto           ; Auto          ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;       0.00 % ;
+; Total nodes checked                                 ; 86           ;
+; Total output ports checked                          ; 86           ;
+; Total output ports with complete 1/0-value coverage ; 0            ;
+; Total output ports with no 1/0-value coverage       ; 86           ;
+; Total output ports with no 1-value coverage         ; 86           ;
+; Total output ports with no 0-value coverage         ; 86           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-------------------------------------------------+
+; Complete 1/0-Value Coverage                     ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-----------------------------------------------------------------------+
+; Missing 1-Value Coverage                                              ;
++-----------------------+----------------------------+------------------+
+; Node Name             ; Output Port Name           ; Output Port Type ;
++-----------------------+----------------------------+------------------+
+; |comparator|Equal0~0  ; |comparator|Equal0~0       ; combout          ;
+; |comparator|Equal0~1  ; |comparator|Equal0~1       ; combout          ;
+; |comparator|Equal0~2  ; |comparator|Equal0~2       ; combout          ;
+; |comparator|Equal0~3  ; |comparator|Equal0~3       ; combout          ;
+; |comparator|Equal0~4  ; |comparator|Equal0~4       ; combout          ;
+; |comparator|Equal0~5  ; |comparator|Equal0~5       ; combout          ;
+; |comparator|Equal0~6  ; |comparator|Equal0~6       ; combout          ;
+; |comparator|Equal0~7  ; |comparator|Equal0~7       ; combout          ;
+; |comparator|Equal0~8  ; |comparator|Equal0~8       ; combout          ;
+; |comparator|Equal0~9  ; |comparator|Equal0~9       ; combout          ;
+; |comparator|Equal0~10 ; |comparator|Equal0~10      ; combout          ;
+; |comparator|Equal0~11 ; |comparator|Equal0~11      ; combout          ;
+; |comparator|Equal0~12 ; |comparator|Equal0~12      ; combout          ;
+; |comparator|Equal0~13 ; |comparator|Equal0~13      ; combout          ;
+; |comparator|Equal0~14 ; |comparator|Equal0~14      ; combout          ;
+; |comparator|Equal0~15 ; |comparator|Equal0~15      ; combout          ;
+; |comparator|Equal0~16 ; |comparator|Equal0~16      ; combout          ;
+; |comparator|Equal0~17 ; |comparator|Equal0~17      ; combout          ;
+; |comparator|Equal0~18 ; |comparator|Equal0~18      ; combout          ;
+; |comparator|Equal0~19 ; |comparator|Equal0~19      ; combout          ;
+; |comparator|Equal0~20 ; |comparator|Equal0~20      ; combout          ;
+; |comparator|EQ        ; |comparator|EQ             ; padio            ;
+; |comparator|D_1[0]    ; |comparator|D_1[0]~corein  ; combout          ;
+; |comparator|D_1[1]    ; |comparator|D_1[1]~corein  ; combout          ;
+; |comparator|D_2[1]    ; |comparator|D_2[1]~corein  ; combout          ;
+; |comparator|D_2[0]    ; |comparator|D_2[0]~corein  ; combout          ;
+; |comparator|D_1[2]    ; |comparator|D_1[2]~corein  ; combout          ;
+; |comparator|D_1[3]    ; |comparator|D_1[3]~corein  ; combout          ;
+; |comparator|D_2[3]    ; |comparator|D_2[3]~corein  ; combout          ;
+; |comparator|D_2[2]    ; |comparator|D_2[2]~corein  ; combout          ;
+; |comparator|D_1[4]    ; |comparator|D_1[4]~corein  ; combout          ;
+; |comparator|D_1[5]    ; |comparator|D_1[5]~corein  ; combout          ;
+; |comparator|D_2[5]    ; |comparator|D_2[5]~corein  ; combout          ;
+; |comparator|D_2[4]    ; |comparator|D_2[4]~corein  ; combout          ;
+; |comparator|D_1[6]    ; |comparator|D_1[6]~corein  ; combout          ;
+; |comparator|D_1[7]    ; |comparator|D_1[7]~corein  ; combout          ;
+; |comparator|D_2[7]    ; |comparator|D_2[7]~corein  ; combout          ;
+; |comparator|D_2[6]    ; |comparator|D_2[6]~corein  ; combout          ;
+; |comparator|D_1[8]    ; |comparator|D_1[8]~corein  ; combout          ;
+; |comparator|D_1[9]    ; |comparator|D_1[9]~corein  ; combout          ;
+; |comparator|D_2[9]    ; |comparator|D_2[9]~corein  ; combout          ;
+; |comparator|D_2[8]    ; |comparator|D_2[8]~corein  ; combout          ;
+; |comparator|D_1[10]   ; |comparator|D_1[10]~corein ; combout          ;
+; |comparator|D_1[11]   ; |comparator|D_1[11]~corein ; combout          ;
+; |comparator|D_2[11]   ; |comparator|D_2[11]~corein ; combout          ;
+; |comparator|D_2[10]   ; |comparator|D_2[10]~corein ; combout          ;
+; |comparator|D_1[12]   ; |comparator|D_1[12]~corein ; combout          ;
+; |comparator|D_1[13]   ; |comparator|D_1[13]~corein ; combout          ;
+; |comparator|D_2[13]   ; |comparator|D_2[13]~corein ; combout          ;
+; |comparator|D_2[12]   ; |comparator|D_2[12]~corein ; combout          ;
+; |comparator|D_1[14]   ; |comparator|D_1[14]~corein ; combout          ;
+; |comparator|D_1[15]   ; |comparator|D_1[15]~corein ; combout          ;
+; |comparator|D_2[15]   ; |comparator|D_2[15]~corein ; combout          ;
+; |comparator|D_2[14]   ; |comparator|D_2[14]~corein ; combout          ;
+; |comparator|D_1[16]   ; |comparator|D_1[16]~corein ; combout          ;
+; |comparator|D_1[17]   ; |comparator|D_1[17]~corein ; combout          ;
+; |comparator|D_2[17]   ; |comparator|D_2[17]~corein ; combout          ;
+; |comparator|D_2[16]   ; |comparator|D_2[16]~corein ; combout          ;
+; |comparator|D_1[18]   ; |comparator|D_1[18]~corein ; combout          ;
+; |comparator|D_1[19]   ; |comparator|D_1[19]~corein ; combout          ;
+; |comparator|D_2[19]   ; |comparator|D_2[19]~corein ; combout          ;
+; |comparator|D_2[18]   ; |comparator|D_2[18]~corein ; combout          ;
+; |comparator|D_1[20]   ; |comparator|D_1[20]~corein ; combout          ;
+; |comparator|D_1[21]   ; |comparator|D_1[21]~corein ; combout          ;
+; |comparator|D_2[21]   ; |comparator|D_2[21]~corein ; combout          ;
+; |comparator|D_2[20]   ; |comparator|D_2[20]~corein ; combout          ;
+; |comparator|D_1[22]   ; |comparator|D_1[22]~corein ; combout          ;
+; |comparator|D_1[23]   ; |comparator|D_1[23]~corein ; combout          ;
+; |comparator|D_2[23]   ; |comparator|D_2[23]~corein ; combout          ;
+; |comparator|D_2[22]   ; |comparator|D_2[22]~corein ; combout          ;
+; |comparator|D_1[24]   ; |comparator|D_1[24]~corein ; combout          ;
+; |comparator|D_1[25]   ; |comparator|D_1[25]~corein ; combout          ;
+; |comparator|D_2[25]   ; |comparator|D_2[25]~corein ; combout          ;
+; |comparator|D_2[24]   ; |comparator|D_2[24]~corein ; combout          ;
+; |comparator|D_1[26]   ; |comparator|D_1[26]~corein ; combout          ;
+; |comparator|D_1[27]   ; |comparator|D_1[27]~corein ; combout          ;
+; |comparator|D_2[27]   ; |comparator|D_2[27]~corein ; combout          ;
+; |comparator|D_2[26]   ; |comparator|D_2[26]~corein ; combout          ;
+; |comparator|D_1[28]   ; |comparator|D_1[28]~corein ; combout          ;
+; |comparator|D_1[29]   ; |comparator|D_1[29]~corein ; combout          ;
+; |comparator|D_2[29]   ; |comparator|D_2[29]~corein ; combout          ;
+; |comparator|D_2[28]   ; |comparator|D_2[28]~corein ; combout          ;
+; |comparator|D_1[30]   ; |comparator|D_1[30]~corein ; combout          ;
+; |comparator|D_1[31]   ; |comparator|D_1[31]~corein ; combout          ;
+; |comparator|D_2[31]   ; |comparator|D_2[31]~corein ; combout          ;
+; |comparator|D_2[30]   ; |comparator|D_2[30]~corein ; combout          ;
++-----------------------+----------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-----------------------------------------------------------------------+
+; Missing 0-Value Coverage                                              ;
++-----------------------+----------------------------+------------------+
+; Node Name             ; Output Port Name           ; Output Port Type ;
++-----------------------+----------------------------+------------------+
+; |comparator|Equal0~0  ; |comparator|Equal0~0       ; combout          ;
+; |comparator|Equal0~1  ; |comparator|Equal0~1       ; combout          ;
+; |comparator|Equal0~2  ; |comparator|Equal0~2       ; combout          ;
+; |comparator|Equal0~3  ; |comparator|Equal0~3       ; combout          ;
+; |comparator|Equal0~4  ; |comparator|Equal0~4       ; combout          ;
+; |comparator|Equal0~5  ; |comparator|Equal0~5       ; combout          ;
+; |comparator|Equal0~6  ; |comparator|Equal0~6       ; combout          ;
+; |comparator|Equal0~7  ; |comparator|Equal0~7       ; combout          ;
+; |comparator|Equal0~8  ; |comparator|Equal0~8       ; combout          ;
+; |comparator|Equal0~9  ; |comparator|Equal0~9       ; combout          ;
+; |comparator|Equal0~10 ; |comparator|Equal0~10      ; combout          ;
+; |comparator|Equal0~11 ; |comparator|Equal0~11      ; combout          ;
+; |comparator|Equal0~12 ; |comparator|Equal0~12      ; combout          ;
+; |comparator|Equal0~13 ; |comparator|Equal0~13      ; combout          ;
+; |comparator|Equal0~14 ; |comparator|Equal0~14      ; combout          ;
+; |comparator|Equal0~15 ; |comparator|Equal0~15      ; combout          ;
+; |comparator|Equal0~16 ; |comparator|Equal0~16      ; combout          ;
+; |comparator|Equal0~17 ; |comparator|Equal0~17      ; combout          ;
+; |comparator|Equal0~18 ; |comparator|Equal0~18      ; combout          ;
+; |comparator|Equal0~19 ; |comparator|Equal0~19      ; combout          ;
+; |comparator|Equal0~20 ; |comparator|Equal0~20      ; combout          ;
+; |comparator|EQ        ; |comparator|EQ             ; padio            ;
+; |comparator|D_1[0]    ; |comparator|D_1[0]~corein  ; combout          ;
+; |comparator|D_1[1]    ; |comparator|D_1[1]~corein  ; combout          ;
+; |comparator|D_2[1]    ; |comparator|D_2[1]~corein  ; combout          ;
+; |comparator|D_2[0]    ; |comparator|D_2[0]~corein  ; combout          ;
+; |comparator|D_1[2]    ; |comparator|D_1[2]~corein  ; combout          ;
+; |comparator|D_1[3]    ; |comparator|D_1[3]~corein  ; combout          ;
+; |comparator|D_2[3]    ; |comparator|D_2[3]~corein  ; combout          ;
+; |comparator|D_2[2]    ; |comparator|D_2[2]~corein  ; combout          ;
+; |comparator|D_1[4]    ; |comparator|D_1[4]~corein  ; combout          ;
+; |comparator|D_1[5]    ; |comparator|D_1[5]~corein  ; combout          ;
+; |comparator|D_2[5]    ; |comparator|D_2[5]~corein  ; combout          ;
+; |comparator|D_2[4]    ; |comparator|D_2[4]~corein  ; combout          ;
+; |comparator|D_1[6]    ; |comparator|D_1[6]~corein  ; combout          ;
+; |comparator|D_1[7]    ; |comparator|D_1[7]~corein  ; combout          ;
+; |comparator|D_2[7]    ; |comparator|D_2[7]~corein  ; combout          ;
+; |comparator|D_2[6]    ; |comparator|D_2[6]~corein  ; combout          ;
+; |comparator|D_1[8]    ; |comparator|D_1[8]~corein  ; combout          ;
+; |comparator|D_1[9]    ; |comparator|D_1[9]~corein  ; combout          ;
+; |comparator|D_2[9]    ; |comparator|D_2[9]~corein  ; combout          ;
+; |comparator|D_2[8]    ; |comparator|D_2[8]~corein  ; combout          ;
+; |comparator|D_1[10]   ; |comparator|D_1[10]~corein ; combout          ;
+; |comparator|D_1[11]   ; |comparator|D_1[11]~corein ; combout          ;
+; |comparator|D_2[11]   ; |comparator|D_2[11]~corein ; combout          ;
+; |comparator|D_2[10]   ; |comparator|D_2[10]~corein ; combout          ;
+; |comparator|D_1[12]   ; |comparator|D_1[12]~corein ; combout          ;
+; |comparator|D_1[13]   ; |comparator|D_1[13]~corein ; combout          ;
+; |comparator|D_2[13]   ; |comparator|D_2[13]~corein ; combout          ;
+; |comparator|D_2[12]   ; |comparator|D_2[12]~corein ; combout          ;
+; |comparator|D_1[14]   ; |comparator|D_1[14]~corein ; combout          ;
+; |comparator|D_1[15]   ; |comparator|D_1[15]~corein ; combout          ;
+; |comparator|D_2[15]   ; |comparator|D_2[15]~corein ; combout          ;
+; |comparator|D_2[14]   ; |comparator|D_2[14]~corein ; combout          ;
+; |comparator|D_1[16]   ; |comparator|D_1[16]~corein ; combout          ;
+; |comparator|D_1[17]   ; |comparator|D_1[17]~corein ; combout          ;
+; |comparator|D_2[17]   ; |comparator|D_2[17]~corein ; combout          ;
+; |comparator|D_2[16]   ; |comparator|D_2[16]~corein ; combout          ;
+; |comparator|D_1[18]   ; |comparator|D_1[18]~corein ; combout          ;
+; |comparator|D_1[19]   ; |comparator|D_1[19]~corein ; combout          ;
+; |comparator|D_2[19]   ; |comparator|D_2[19]~corein ; combout          ;
+; |comparator|D_2[18]   ; |comparator|D_2[18]~corein ; combout          ;
+; |comparator|D_1[20]   ; |comparator|D_1[20]~corein ; combout          ;
+; |comparator|D_1[21]   ; |comparator|D_1[21]~corein ; combout          ;
+; |comparator|D_2[21]   ; |comparator|D_2[21]~corein ; combout          ;
+; |comparator|D_2[20]   ; |comparator|D_2[20]~corein ; combout          ;
+; |comparator|D_1[22]   ; |comparator|D_1[22]~corein ; combout          ;
+; |comparator|D_1[23]   ; |comparator|D_1[23]~corein ; combout          ;
+; |comparator|D_2[23]   ; |comparator|D_2[23]~corein ; combout          ;
+; |comparator|D_2[22]   ; |comparator|D_2[22]~corein ; combout          ;
+; |comparator|D_1[24]   ; |comparator|D_1[24]~corein ; combout          ;
+; |comparator|D_1[25]   ; |comparator|D_1[25]~corein ; combout          ;
+; |comparator|D_2[25]   ; |comparator|D_2[25]~corein ; combout          ;
+; |comparator|D_2[24]   ; |comparator|D_2[24]~corein ; combout          ;
+; |comparator|D_1[26]   ; |comparator|D_1[26]~corein ; combout          ;
+; |comparator|D_1[27]   ; |comparator|D_1[27]~corein ; combout          ;
+; |comparator|D_2[27]   ; |comparator|D_2[27]~corein ; combout          ;
+; |comparator|D_2[26]   ; |comparator|D_2[26]~corein ; combout          ;
+; |comparator|D_1[28]   ; |comparator|D_1[28]~corein ; combout          ;
+; |comparator|D_1[29]   ; |comparator|D_1[29]~corein ; combout          ;
+; |comparator|D_2[29]   ; |comparator|D_2[29]~corein ; combout          ;
+; |comparator|D_2[28]   ; |comparator|D_2[28]~corein ; combout          ;
+; |comparator|D_1[30]   ; |comparator|D_1[30]~corein ; combout          ;
+; |comparator|D_1[31]   ; |comparator|D_1[31]~corein ; combout          ;
+; |comparator|D_2[31]   ; |comparator|D_2[31]~corein ; combout          ;
+; |comparator|D_2[30]   ; |comparator|D_2[30]~corein ; combout          ;
++-----------------------+----------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Thu Nov 09 12:29:39 2023
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off comparator -c comparator
+Info: Using vector source file "D:/Dimas Github/Praktikum-Arsikom/EL3111_04_20231107_13221076/0_Prelab/Tugas_4/comparator.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of comparator.vwf called comparator.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is       0.00 %
+Info: Number of transitions in simulation is 0
+Info: Vector file comparator.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 152 megabytes
+    Info: Processing ended: Thu Nov 09 12:29:40 2023
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+
