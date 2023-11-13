@@ -1,0 +1,46 @@
+-- Praktikum EL3111 Arsitektur Sistem Komputer
+-- Modul : 4
+-- Percobaan : 3
+-- Tanggal : 4 November 2023
+-- Kelompok : 9
+-- Rombongan : D
+-- Nama (NIM) 1 : Indira Pramudita Amada (13221081)
+-- Nama (NIM) 2 : Mochamad Arif Firdaus (13221078)
+-- Nama File : cla_32.vhd
+
+LIBRARY ieee;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_unsigned.all;
+USE IEEE.NUMERIC_STD.ALL;
+LIBRARY altera_mf;
+USE altera_mf.altera_mf_components.ALL;
+
+ENTITY cla_32 IS
+PORT (
+    OPRND_1 : IN STD_LOGIC_VECTOR(31 DOWNTO 0); -- Operand 1
+    OPRND_2 : IN STD_LOGIC_VECTOR (31 DOWNTO 0); -- Operand 2
+    C_IN : IN STD_LOGIC; -- Carry In
+    RESULT : OUT STD_LOGIC_VECTOR (31 DOWNTO 0); -- Result
+    C_OUT : OUT STD_LOGIC -- Overflow
+);
+END cla_32;
+
+ARCHITECTURE Behavioral OF cla_32 IS
+SIGNAL P: STD_LOGIC_VECTOR(31 DOWNTO 0); 
+SIGNAL G: STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL C: STD_LOGIC_VECTOR(31 DOWNTO 0);
+BEGIN
+    G <= OPRND_1 AND OPRND_2; -- generate
+    P <= OPRND_1 XOR OPRND_2; -- propagate
+    
+   PROCESS(G, P, C, C_IN, OPRND_1, OPRND_2)
+    BEGIN
+        C(0) <= C_IN OR (G(0) AND P(0));
+        FOR i IN 1 TO 31 LOOP
+            C(i) <= G(i-1) OR (P(i-1) AND (C(i-1) OR G(i)));
+            RESULT(i) <= OPRND_1(i) XOR OPRND_2(i) XOR C(i);
+        END LOOP;
+        C_OUT <= C(31); 
+		RESULT(0) <= OPRND_1(0) XOR OPRND_2(0) XOR C_IN;
+    END PROCESS;
+END Behavioral;

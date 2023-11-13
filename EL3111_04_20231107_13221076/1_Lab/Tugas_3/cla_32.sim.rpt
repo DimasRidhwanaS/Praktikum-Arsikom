@@ -1,0 +1,480 @@
+Simulator report for cla_32
+Thu Nov 09 12:14:19 2023
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 179 nodes    ;
+; Simulation Coverage         ;      22.35 % ;
+; Total Number of Transitions ; 3715         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C70F896C6 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; Timing.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      22.35 % ;
+; Total nodes checked                                 ; 179          ;
+; Total output ports checked                          ; 179          ;
+; Total output ports with complete 1/0-value coverage ; 40           ;
+; Total output ports with no 1/0-value coverage       ; 136          ;
+; Total output ports with no 1-value coverage         ; 136          ;
+; Total output ports with no 0-value coverage         ; 139          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                        ;
++---------------------+---------------------------+------------------+
+; Node Name           ; Output Port Name          ; Output Port Type ;
++---------------------+---------------------------+------------------+
+; |cla_32|RESULT~0    ; |cla_32|RESULT~0          ; combout          ;
+; |cla_32|c_int[1]~0  ; |cla_32|c_int[1]~0        ; combout          ;
+; |cla_32|c_int[1]~1  ; |cla_32|c_int[1]~1        ; combout          ;
+; |cla_32|RESULT~1    ; |cla_32|RESULT~1          ; combout          ;
+; |cla_32|c_int[2]~2  ; |cla_32|c_int[2]~2        ; combout          ;
+; |cla_32|RESULT~2    ; |cla_32|RESULT~2          ; combout          ;
+; |cla_32|c_int[3]~3  ; |cla_32|c_int[3]~3        ; combout          ;
+; |cla_32|c_int[3]~4  ; |cla_32|c_int[3]~4        ; combout          ;
+; |cla_32|c_int[3]~5  ; |cla_32|c_int[3]~5        ; combout          ;
+; |cla_32|RESULT~3    ; |cla_32|RESULT~3          ; combout          ;
+; |cla_32|c_int[4]~6  ; |cla_32|c_int[4]~6        ; combout          ;
+; |cla_32|RESULT~4    ; |cla_32|RESULT~4          ; combout          ;
+; |cla_32|c_int[5]~7  ; |cla_32|c_int[5]~7        ; combout          ;
+; |cla_32|c_int[5]~8  ; |cla_32|c_int[5]~8        ; combout          ;
+; |cla_32|RESULT~5    ; |cla_32|RESULT~5          ; combout          ;
+; |cla_32|c_int[6]~9  ; |cla_32|c_int[6]~9        ; combout          ;
+; |cla_32|RESULT~6    ; |cla_32|RESULT~6          ; combout          ;
+; |cla_32|c_int[7]~11 ; |cla_32|c_int[7]~11       ; combout          ;
+; |cla_32|RESULT~7    ; |cla_32|RESULT~7          ; combout          ;
+; |cla_32|RESULT[0]   ; |cla_32|RESULT[0]         ; padio            ;
+; |cla_32|RESULT[1]   ; |cla_32|RESULT[1]         ; padio            ;
+; |cla_32|RESULT[2]   ; |cla_32|RESULT[2]         ; padio            ;
+; |cla_32|RESULT[3]   ; |cla_32|RESULT[3]         ; padio            ;
+; |cla_32|RESULT[4]   ; |cla_32|RESULT[4]         ; padio            ;
+; |cla_32|RESULT[5]   ; |cla_32|RESULT[5]         ; padio            ;
+; |cla_32|RESULT[6]   ; |cla_32|RESULT[6]         ; padio            ;
+; |cla_32|RESULT[7]   ; |cla_32|RESULT[7]         ; padio            ;
+; |cla_32|OPRND_1[0]  ; |cla_32|OPRND_1[0]~corein ; combout          ;
+; |cla_32|OPRND_2[0]  ; |cla_32|OPRND_2[0]~corein ; combout          ;
+; |cla_32|C_IN        ; |cla_32|C_IN~corein       ; combout          ;
+; |cla_32|OPRND_2[1]  ; |cla_32|OPRND_2[1]~corein ; combout          ;
+; |cla_32|OPRND_1[1]  ; |cla_32|OPRND_1[1]~corein ; combout          ;
+; |cla_32|OPRND_1[2]  ; |cla_32|OPRND_1[2]~corein ; combout          ;
+; |cla_32|OPRND_2[2]  ; |cla_32|OPRND_2[2]~corein ; combout          ;
+; |cla_32|OPRND_2[3]  ; |cla_32|OPRND_2[3]~corein ; combout          ;
+; |cla_32|OPRND_1[3]  ; |cla_32|OPRND_1[3]~corein ; combout          ;
+; |cla_32|OPRND_1[4]  ; |cla_32|OPRND_1[4]~corein ; combout          ;
+; |cla_32|OPRND_2[4]  ; |cla_32|OPRND_2[4]~corein ; combout          ;
+; |cla_32|OPRND_2[5]  ; |cla_32|OPRND_2[5]~corein ; combout          ;
+; |cla_32|OPRND_1[5]  ; |cla_32|OPRND_1[5]~corein ; combout          ;
++---------------------+---------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------+
+; Missing 1-Value Coverage                                             ;
++----------------------+----------------------------+------------------+
+; Node Name            ; Output Port Name           ; Output Port Type ;
++----------------------+----------------------------+------------------+
+; |cla_32|c_int[8]~12  ; |cla_32|c_int[8]~12        ; combout          ;
+; |cla_32|RESULT~8     ; |cla_32|RESULT~8           ; combout          ;
+; |cla_32|c_int[9]~13  ; |cla_32|c_int[9]~13        ; combout          ;
+; |cla_32|c_int[9]~14  ; |cla_32|c_int[9]~14        ; combout          ;
+; |cla_32|RESULT~9     ; |cla_32|RESULT~9           ; combout          ;
+; |cla_32|c_int[10]~15 ; |cla_32|c_int[10]~15       ; combout          ;
+; |cla_32|RESULT~10    ; |cla_32|RESULT~10          ; combout          ;
+; |cla_32|c_int[11]~16 ; |cla_32|c_int[11]~16       ; combout          ;
+; |cla_32|c_int[11]~17 ; |cla_32|c_int[11]~17       ; combout          ;
+; |cla_32|RESULT~11    ; |cla_32|RESULT~11          ; combout          ;
+; |cla_32|c_int[12]~18 ; |cla_32|c_int[12]~18       ; combout          ;
+; |cla_32|RESULT~12    ; |cla_32|RESULT~12          ; combout          ;
+; |cla_32|c_int[13]~19 ; |cla_32|c_int[13]~19       ; combout          ;
+; |cla_32|c_int[13]~20 ; |cla_32|c_int[13]~20       ; combout          ;
+; |cla_32|RESULT~13    ; |cla_32|RESULT~13          ; combout          ;
+; |cla_32|c_int[14]~21 ; |cla_32|c_int[14]~21       ; combout          ;
+; |cla_32|RESULT~14    ; |cla_32|RESULT~14          ; combout          ;
+; |cla_32|c_int[15]~22 ; |cla_32|c_int[15]~22       ; combout          ;
+; |cla_32|c_int[15]~23 ; |cla_32|c_int[15]~23       ; combout          ;
+; |cla_32|RESULT~15    ; |cla_32|RESULT~15          ; combout          ;
+; |cla_32|c_int[16]~24 ; |cla_32|c_int[16]~24       ; combout          ;
+; |cla_32|RESULT~16    ; |cla_32|RESULT~16          ; combout          ;
+; |cla_32|c_int[17]~25 ; |cla_32|c_int[17]~25       ; combout          ;
+; |cla_32|c_int[17]~26 ; |cla_32|c_int[17]~26       ; combout          ;
+; |cla_32|RESULT~17    ; |cla_32|RESULT~17          ; combout          ;
+; |cla_32|c_int[18]~27 ; |cla_32|c_int[18]~27       ; combout          ;
+; |cla_32|RESULT~18    ; |cla_32|RESULT~18          ; combout          ;
+; |cla_32|c_int[19]~28 ; |cla_32|c_int[19]~28       ; combout          ;
+; |cla_32|c_int[19]~29 ; |cla_32|c_int[19]~29       ; combout          ;
+; |cla_32|RESULT~19    ; |cla_32|RESULT~19          ; combout          ;
+; |cla_32|c_int[20]~30 ; |cla_32|c_int[20]~30       ; combout          ;
+; |cla_32|RESULT~20    ; |cla_32|RESULT~20          ; combout          ;
+; |cla_32|c_int[21]~31 ; |cla_32|c_int[21]~31       ; combout          ;
+; |cla_32|c_int[21]~32 ; |cla_32|c_int[21]~32       ; combout          ;
+; |cla_32|RESULT~21    ; |cla_32|RESULT~21          ; combout          ;
+; |cla_32|c_int[22]~33 ; |cla_32|c_int[22]~33       ; combout          ;
+; |cla_32|RESULT~22    ; |cla_32|RESULT~22          ; combout          ;
+; |cla_32|c_int[23]~34 ; |cla_32|c_int[23]~34       ; combout          ;
+; |cla_32|c_int[23]~35 ; |cla_32|c_int[23]~35       ; combout          ;
+; |cla_32|RESULT~23    ; |cla_32|RESULT~23          ; combout          ;
+; |cla_32|c_int[24]~36 ; |cla_32|c_int[24]~36       ; combout          ;
+; |cla_32|RESULT~24    ; |cla_32|RESULT~24          ; combout          ;
+; |cla_32|c_int[25]~37 ; |cla_32|c_int[25]~37       ; combout          ;
+; |cla_32|c_int[25]~38 ; |cla_32|c_int[25]~38       ; combout          ;
+; |cla_32|RESULT~25    ; |cla_32|RESULT~25          ; combout          ;
+; |cla_32|c_int[26]~39 ; |cla_32|c_int[26]~39       ; combout          ;
+; |cla_32|RESULT~26    ; |cla_32|RESULT~26          ; combout          ;
+; |cla_32|c_int[27]~40 ; |cla_32|c_int[27]~40       ; combout          ;
+; |cla_32|c_int[27]~41 ; |cla_32|c_int[27]~41       ; combout          ;
+; |cla_32|RESULT~27    ; |cla_32|RESULT~27          ; combout          ;
+; |cla_32|c_int[28]~42 ; |cla_32|c_int[28]~42       ; combout          ;
+; |cla_32|RESULT~28    ; |cla_32|RESULT~28          ; combout          ;
+; |cla_32|c_int[29]~43 ; |cla_32|c_int[29]~43       ; combout          ;
+; |cla_32|c_int[29]~44 ; |cla_32|c_int[29]~44       ; combout          ;
+; |cla_32|RESULT~29    ; |cla_32|RESULT~29          ; combout          ;
+; |cla_32|c_int[30]~45 ; |cla_32|c_int[30]~45       ; combout          ;
+; |cla_32|RESULT~30    ; |cla_32|RESULT~30          ; combout          ;
+; |cla_32|c_int[31]~46 ; |cla_32|c_int[31]~46       ; combout          ;
+; |cla_32|c_int[31]~47 ; |cla_32|c_int[31]~47       ; combout          ;
+; |cla_32|RESULT~31    ; |cla_32|RESULT~31          ; combout          ;
+; |cla_32|C_OUT~0      ; |cla_32|C_OUT~0            ; combout          ;
+; |cla_32|RESULT[8]    ; |cla_32|RESULT[8]          ; padio            ;
+; |cla_32|RESULT[9]    ; |cla_32|RESULT[9]          ; padio            ;
+; |cla_32|RESULT[10]   ; |cla_32|RESULT[10]         ; padio            ;
+; |cla_32|RESULT[11]   ; |cla_32|RESULT[11]         ; padio            ;
+; |cla_32|RESULT[12]   ; |cla_32|RESULT[12]         ; padio            ;
+; |cla_32|RESULT[13]   ; |cla_32|RESULT[13]         ; padio            ;
+; |cla_32|RESULT[14]   ; |cla_32|RESULT[14]         ; padio            ;
+; |cla_32|RESULT[15]   ; |cla_32|RESULT[15]         ; padio            ;
+; |cla_32|RESULT[16]   ; |cla_32|RESULT[16]         ; padio            ;
+; |cla_32|RESULT[17]   ; |cla_32|RESULT[17]         ; padio            ;
+; |cla_32|RESULT[18]   ; |cla_32|RESULT[18]         ; padio            ;
+; |cla_32|RESULT[19]   ; |cla_32|RESULT[19]         ; padio            ;
+; |cla_32|RESULT[20]   ; |cla_32|RESULT[20]         ; padio            ;
+; |cla_32|RESULT[21]   ; |cla_32|RESULT[21]         ; padio            ;
+; |cla_32|RESULT[22]   ; |cla_32|RESULT[22]         ; padio            ;
+; |cla_32|RESULT[23]   ; |cla_32|RESULT[23]         ; padio            ;
+; |cla_32|RESULT[24]   ; |cla_32|RESULT[24]         ; padio            ;
+; |cla_32|RESULT[25]   ; |cla_32|RESULT[25]         ; padio            ;
+; |cla_32|RESULT[26]   ; |cla_32|RESULT[26]         ; padio            ;
+; |cla_32|RESULT[27]   ; |cla_32|RESULT[27]         ; padio            ;
+; |cla_32|RESULT[28]   ; |cla_32|RESULT[28]         ; padio            ;
+; |cla_32|RESULT[29]   ; |cla_32|RESULT[29]         ; padio            ;
+; |cla_32|RESULT[30]   ; |cla_32|RESULT[30]         ; padio            ;
+; |cla_32|RESULT[31]   ; |cla_32|RESULT[31]         ; padio            ;
+; |cla_32|C_OUT        ; |cla_32|C_OUT              ; padio            ;
+; |cla_32|OPRND_2[7]   ; |cla_32|OPRND_2[7]~corein  ; combout          ;
+; |cla_32|OPRND_1[7]   ; |cla_32|OPRND_1[7]~corein  ; combout          ;
+; |cla_32|OPRND_1[8]   ; |cla_32|OPRND_1[8]~corein  ; combout          ;
+; |cla_32|OPRND_2[8]   ; |cla_32|OPRND_2[8]~corein  ; combout          ;
+; |cla_32|OPRND_2[9]   ; |cla_32|OPRND_2[9]~corein  ; combout          ;
+; |cla_32|OPRND_1[9]   ; |cla_32|OPRND_1[9]~corein  ; combout          ;
+; |cla_32|OPRND_1[10]  ; |cla_32|OPRND_1[10]~corein ; combout          ;
+; |cla_32|OPRND_2[10]  ; |cla_32|OPRND_2[10]~corein ; combout          ;
+; |cla_32|OPRND_2[11]  ; |cla_32|OPRND_2[11]~corein ; combout          ;
+; |cla_32|OPRND_1[11]  ; |cla_32|OPRND_1[11]~corein ; combout          ;
+; |cla_32|OPRND_1[12]  ; |cla_32|OPRND_1[12]~corein ; combout          ;
+; |cla_32|OPRND_2[12]  ; |cla_32|OPRND_2[12]~corein ; combout          ;
+; |cla_32|OPRND_2[13]  ; |cla_32|OPRND_2[13]~corein ; combout          ;
+; |cla_32|OPRND_1[13]  ; |cla_32|OPRND_1[13]~corein ; combout          ;
+; |cla_32|OPRND_1[14]  ; |cla_32|OPRND_1[14]~corein ; combout          ;
+; |cla_32|OPRND_2[14]  ; |cla_32|OPRND_2[14]~corein ; combout          ;
+; |cla_32|OPRND_2[15]  ; |cla_32|OPRND_2[15]~corein ; combout          ;
+; |cla_32|OPRND_1[15]  ; |cla_32|OPRND_1[15]~corein ; combout          ;
+; |cla_32|OPRND_1[16]  ; |cla_32|OPRND_1[16]~corein ; combout          ;
+; |cla_32|OPRND_2[16]  ; |cla_32|OPRND_2[16]~corein ; combout          ;
+; |cla_32|OPRND_2[17]  ; |cla_32|OPRND_2[17]~corein ; combout          ;
+; |cla_32|OPRND_1[17]  ; |cla_32|OPRND_1[17]~corein ; combout          ;
+; |cla_32|OPRND_1[18]  ; |cla_32|OPRND_1[18]~corein ; combout          ;
+; |cla_32|OPRND_2[18]  ; |cla_32|OPRND_2[18]~corein ; combout          ;
+; |cla_32|OPRND_2[19]  ; |cla_32|OPRND_2[19]~corein ; combout          ;
+; |cla_32|OPRND_1[19]  ; |cla_32|OPRND_1[19]~corein ; combout          ;
+; |cla_32|OPRND_1[20]  ; |cla_32|OPRND_1[20]~corein ; combout          ;
+; |cla_32|OPRND_2[20]  ; |cla_32|OPRND_2[20]~corein ; combout          ;
+; |cla_32|OPRND_2[21]  ; |cla_32|OPRND_2[21]~corein ; combout          ;
+; |cla_32|OPRND_1[21]  ; |cla_32|OPRND_1[21]~corein ; combout          ;
+; |cla_32|OPRND_1[22]  ; |cla_32|OPRND_1[22]~corein ; combout          ;
+; |cla_32|OPRND_2[22]  ; |cla_32|OPRND_2[22]~corein ; combout          ;
+; |cla_32|OPRND_2[23]  ; |cla_32|OPRND_2[23]~corein ; combout          ;
+; |cla_32|OPRND_1[23]  ; |cla_32|OPRND_1[23]~corein ; combout          ;
+; |cla_32|OPRND_1[24]  ; |cla_32|OPRND_1[24]~corein ; combout          ;
+; |cla_32|OPRND_2[24]  ; |cla_32|OPRND_2[24]~corein ; combout          ;
+; |cla_32|OPRND_2[25]  ; |cla_32|OPRND_2[25]~corein ; combout          ;
+; |cla_32|OPRND_1[25]  ; |cla_32|OPRND_1[25]~corein ; combout          ;
+; |cla_32|OPRND_1[26]  ; |cla_32|OPRND_1[26]~corein ; combout          ;
+; |cla_32|OPRND_2[26]  ; |cla_32|OPRND_2[26]~corein ; combout          ;
+; |cla_32|OPRND_2[27]  ; |cla_32|OPRND_2[27]~corein ; combout          ;
+; |cla_32|OPRND_1[27]  ; |cla_32|OPRND_1[27]~corein ; combout          ;
+; |cla_32|OPRND_1[28]  ; |cla_32|OPRND_1[28]~corein ; combout          ;
+; |cla_32|OPRND_2[28]  ; |cla_32|OPRND_2[28]~corein ; combout          ;
+; |cla_32|OPRND_2[29]  ; |cla_32|OPRND_2[29]~corein ; combout          ;
+; |cla_32|OPRND_1[29]  ; |cla_32|OPRND_1[29]~corein ; combout          ;
+; |cla_32|OPRND_1[30]  ; |cla_32|OPRND_1[30]~corein ; combout          ;
+; |cla_32|OPRND_2[30]  ; |cla_32|OPRND_2[30]~corein ; combout          ;
+; |cla_32|OPRND_2[31]  ; |cla_32|OPRND_2[31]~corein ; combout          ;
+; |cla_32|OPRND_1[31]  ; |cla_32|OPRND_1[31]~corein ; combout          ;
++----------------------+----------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------+
+; Missing 0-Value Coverage                                             ;
++----------------------+----------------------------+------------------+
+; Node Name            ; Output Port Name           ; Output Port Type ;
++----------------------+----------------------------+------------------+
+; |cla_32|c_int[7]~10  ; |cla_32|c_int[7]~10        ; combout          ;
+; |cla_32|c_int[8]~12  ; |cla_32|c_int[8]~12        ; combout          ;
+; |cla_32|RESULT~8     ; |cla_32|RESULT~8           ; combout          ;
+; |cla_32|c_int[9]~13  ; |cla_32|c_int[9]~13        ; combout          ;
+; |cla_32|c_int[9]~14  ; |cla_32|c_int[9]~14        ; combout          ;
+; |cla_32|RESULT~9     ; |cla_32|RESULT~9           ; combout          ;
+; |cla_32|c_int[10]~15 ; |cla_32|c_int[10]~15       ; combout          ;
+; |cla_32|RESULT~10    ; |cla_32|RESULT~10          ; combout          ;
+; |cla_32|c_int[11]~16 ; |cla_32|c_int[11]~16       ; combout          ;
+; |cla_32|c_int[11]~17 ; |cla_32|c_int[11]~17       ; combout          ;
+; |cla_32|RESULT~11    ; |cla_32|RESULT~11          ; combout          ;
+; |cla_32|c_int[12]~18 ; |cla_32|c_int[12]~18       ; combout          ;
+; |cla_32|RESULT~12    ; |cla_32|RESULT~12          ; combout          ;
+; |cla_32|c_int[13]~19 ; |cla_32|c_int[13]~19       ; combout          ;
+; |cla_32|c_int[13]~20 ; |cla_32|c_int[13]~20       ; combout          ;
+; |cla_32|RESULT~13    ; |cla_32|RESULT~13          ; combout          ;
+; |cla_32|c_int[14]~21 ; |cla_32|c_int[14]~21       ; combout          ;
+; |cla_32|RESULT~14    ; |cla_32|RESULT~14          ; combout          ;
+; |cla_32|c_int[15]~22 ; |cla_32|c_int[15]~22       ; combout          ;
+; |cla_32|c_int[15]~23 ; |cla_32|c_int[15]~23       ; combout          ;
+; |cla_32|RESULT~15    ; |cla_32|RESULT~15          ; combout          ;
+; |cla_32|c_int[16]~24 ; |cla_32|c_int[16]~24       ; combout          ;
+; |cla_32|RESULT~16    ; |cla_32|RESULT~16          ; combout          ;
+; |cla_32|c_int[17]~25 ; |cla_32|c_int[17]~25       ; combout          ;
+; |cla_32|c_int[17]~26 ; |cla_32|c_int[17]~26       ; combout          ;
+; |cla_32|RESULT~17    ; |cla_32|RESULT~17          ; combout          ;
+; |cla_32|c_int[18]~27 ; |cla_32|c_int[18]~27       ; combout          ;
+; |cla_32|RESULT~18    ; |cla_32|RESULT~18          ; combout          ;
+; |cla_32|c_int[19]~28 ; |cla_32|c_int[19]~28       ; combout          ;
+; |cla_32|c_int[19]~29 ; |cla_32|c_int[19]~29       ; combout          ;
+; |cla_32|RESULT~19    ; |cla_32|RESULT~19          ; combout          ;
+; |cla_32|c_int[20]~30 ; |cla_32|c_int[20]~30       ; combout          ;
+; |cla_32|RESULT~20    ; |cla_32|RESULT~20          ; combout          ;
+; |cla_32|c_int[21]~31 ; |cla_32|c_int[21]~31       ; combout          ;
+; |cla_32|c_int[21]~32 ; |cla_32|c_int[21]~32       ; combout          ;
+; |cla_32|RESULT~21    ; |cla_32|RESULT~21          ; combout          ;
+; |cla_32|c_int[22]~33 ; |cla_32|c_int[22]~33       ; combout          ;
+; |cla_32|RESULT~22    ; |cla_32|RESULT~22          ; combout          ;
+; |cla_32|c_int[23]~34 ; |cla_32|c_int[23]~34       ; combout          ;
+; |cla_32|c_int[23]~35 ; |cla_32|c_int[23]~35       ; combout          ;
+; |cla_32|RESULT~23    ; |cla_32|RESULT~23          ; combout          ;
+; |cla_32|c_int[24]~36 ; |cla_32|c_int[24]~36       ; combout          ;
+; |cla_32|RESULT~24    ; |cla_32|RESULT~24          ; combout          ;
+; |cla_32|c_int[25]~37 ; |cla_32|c_int[25]~37       ; combout          ;
+; |cla_32|c_int[25]~38 ; |cla_32|c_int[25]~38       ; combout          ;
+; |cla_32|RESULT~25    ; |cla_32|RESULT~25          ; combout          ;
+; |cla_32|c_int[26]~39 ; |cla_32|c_int[26]~39       ; combout          ;
+; |cla_32|RESULT~26    ; |cla_32|RESULT~26          ; combout          ;
+; |cla_32|c_int[27]~40 ; |cla_32|c_int[27]~40       ; combout          ;
+; |cla_32|c_int[27]~41 ; |cla_32|c_int[27]~41       ; combout          ;
+; |cla_32|RESULT~27    ; |cla_32|RESULT~27          ; combout          ;
+; |cla_32|c_int[28]~42 ; |cla_32|c_int[28]~42       ; combout          ;
+; |cla_32|RESULT~28    ; |cla_32|RESULT~28          ; combout          ;
+; |cla_32|c_int[29]~43 ; |cla_32|c_int[29]~43       ; combout          ;
+; |cla_32|c_int[29]~44 ; |cla_32|c_int[29]~44       ; combout          ;
+; |cla_32|RESULT~29    ; |cla_32|RESULT~29          ; combout          ;
+; |cla_32|c_int[30]~45 ; |cla_32|c_int[30]~45       ; combout          ;
+; |cla_32|RESULT~30    ; |cla_32|RESULT~30          ; combout          ;
+; |cla_32|c_int[31]~46 ; |cla_32|c_int[31]~46       ; combout          ;
+; |cla_32|c_int[31]~47 ; |cla_32|c_int[31]~47       ; combout          ;
+; |cla_32|RESULT~31    ; |cla_32|RESULT~31          ; combout          ;
+; |cla_32|C_OUT~0      ; |cla_32|C_OUT~0            ; combout          ;
+; |cla_32|RESULT[8]    ; |cla_32|RESULT[8]          ; padio            ;
+; |cla_32|RESULT[9]    ; |cla_32|RESULT[9]          ; padio            ;
+; |cla_32|RESULT[10]   ; |cla_32|RESULT[10]         ; padio            ;
+; |cla_32|RESULT[11]   ; |cla_32|RESULT[11]         ; padio            ;
+; |cla_32|RESULT[12]   ; |cla_32|RESULT[12]         ; padio            ;
+; |cla_32|RESULT[13]   ; |cla_32|RESULT[13]         ; padio            ;
+; |cla_32|RESULT[14]   ; |cla_32|RESULT[14]         ; padio            ;
+; |cla_32|RESULT[15]   ; |cla_32|RESULT[15]         ; padio            ;
+; |cla_32|RESULT[16]   ; |cla_32|RESULT[16]         ; padio            ;
+; |cla_32|RESULT[17]   ; |cla_32|RESULT[17]         ; padio            ;
+; |cla_32|RESULT[18]   ; |cla_32|RESULT[18]         ; padio            ;
+; |cla_32|RESULT[19]   ; |cla_32|RESULT[19]         ; padio            ;
+; |cla_32|RESULT[20]   ; |cla_32|RESULT[20]         ; padio            ;
+; |cla_32|RESULT[21]   ; |cla_32|RESULT[21]         ; padio            ;
+; |cla_32|RESULT[22]   ; |cla_32|RESULT[22]         ; padio            ;
+; |cla_32|RESULT[23]   ; |cla_32|RESULT[23]         ; padio            ;
+; |cla_32|RESULT[24]   ; |cla_32|RESULT[24]         ; padio            ;
+; |cla_32|RESULT[25]   ; |cla_32|RESULT[25]         ; padio            ;
+; |cla_32|RESULT[26]   ; |cla_32|RESULT[26]         ; padio            ;
+; |cla_32|RESULT[27]   ; |cla_32|RESULT[27]         ; padio            ;
+; |cla_32|RESULT[28]   ; |cla_32|RESULT[28]         ; padio            ;
+; |cla_32|RESULT[29]   ; |cla_32|RESULT[29]         ; padio            ;
+; |cla_32|RESULT[30]   ; |cla_32|RESULT[30]         ; padio            ;
+; |cla_32|RESULT[31]   ; |cla_32|RESULT[31]         ; padio            ;
+; |cla_32|C_OUT        ; |cla_32|C_OUT              ; padio            ;
+; |cla_32|OPRND_1[6]   ; |cla_32|OPRND_1[6]~corein  ; combout          ;
+; |cla_32|OPRND_2[6]   ; |cla_32|OPRND_2[6]~corein  ; combout          ;
+; |cla_32|OPRND_2[7]   ; |cla_32|OPRND_2[7]~corein  ; combout          ;
+; |cla_32|OPRND_1[7]   ; |cla_32|OPRND_1[7]~corein  ; combout          ;
+; |cla_32|OPRND_1[8]   ; |cla_32|OPRND_1[8]~corein  ; combout          ;
+; |cla_32|OPRND_2[8]   ; |cla_32|OPRND_2[8]~corein  ; combout          ;
+; |cla_32|OPRND_2[9]   ; |cla_32|OPRND_2[9]~corein  ; combout          ;
+; |cla_32|OPRND_1[9]   ; |cla_32|OPRND_1[9]~corein  ; combout          ;
+; |cla_32|OPRND_1[10]  ; |cla_32|OPRND_1[10]~corein ; combout          ;
+; |cla_32|OPRND_2[10]  ; |cla_32|OPRND_2[10]~corein ; combout          ;
+; |cla_32|OPRND_2[11]  ; |cla_32|OPRND_2[11]~corein ; combout          ;
+; |cla_32|OPRND_1[11]  ; |cla_32|OPRND_1[11]~corein ; combout          ;
+; |cla_32|OPRND_1[12]  ; |cla_32|OPRND_1[12]~corein ; combout          ;
+; |cla_32|OPRND_2[12]  ; |cla_32|OPRND_2[12]~corein ; combout          ;
+; |cla_32|OPRND_2[13]  ; |cla_32|OPRND_2[13]~corein ; combout          ;
+; |cla_32|OPRND_1[13]  ; |cla_32|OPRND_1[13]~corein ; combout          ;
+; |cla_32|OPRND_1[14]  ; |cla_32|OPRND_1[14]~corein ; combout          ;
+; |cla_32|OPRND_2[14]  ; |cla_32|OPRND_2[14]~corein ; combout          ;
+; |cla_32|OPRND_2[15]  ; |cla_32|OPRND_2[15]~corein ; combout          ;
+; |cla_32|OPRND_1[15]  ; |cla_32|OPRND_1[15]~corein ; combout          ;
+; |cla_32|OPRND_1[16]  ; |cla_32|OPRND_1[16]~corein ; combout          ;
+; |cla_32|OPRND_2[16]  ; |cla_32|OPRND_2[16]~corein ; combout          ;
+; |cla_32|OPRND_2[17]  ; |cla_32|OPRND_2[17]~corein ; combout          ;
+; |cla_32|OPRND_1[17]  ; |cla_32|OPRND_1[17]~corein ; combout          ;
+; |cla_32|OPRND_1[18]  ; |cla_32|OPRND_1[18]~corein ; combout          ;
+; |cla_32|OPRND_2[18]  ; |cla_32|OPRND_2[18]~corein ; combout          ;
+; |cla_32|OPRND_2[19]  ; |cla_32|OPRND_2[19]~corein ; combout          ;
+; |cla_32|OPRND_1[19]  ; |cla_32|OPRND_1[19]~corein ; combout          ;
+; |cla_32|OPRND_1[20]  ; |cla_32|OPRND_1[20]~corein ; combout          ;
+; |cla_32|OPRND_2[20]  ; |cla_32|OPRND_2[20]~corein ; combout          ;
+; |cla_32|OPRND_2[21]  ; |cla_32|OPRND_2[21]~corein ; combout          ;
+; |cla_32|OPRND_1[21]  ; |cla_32|OPRND_1[21]~corein ; combout          ;
+; |cla_32|OPRND_1[22]  ; |cla_32|OPRND_1[22]~corein ; combout          ;
+; |cla_32|OPRND_2[22]  ; |cla_32|OPRND_2[22]~corein ; combout          ;
+; |cla_32|OPRND_2[23]  ; |cla_32|OPRND_2[23]~corein ; combout          ;
+; |cla_32|OPRND_1[23]  ; |cla_32|OPRND_1[23]~corein ; combout          ;
+; |cla_32|OPRND_1[24]  ; |cla_32|OPRND_1[24]~corein ; combout          ;
+; |cla_32|OPRND_2[24]  ; |cla_32|OPRND_2[24]~corein ; combout          ;
+; |cla_32|OPRND_2[25]  ; |cla_32|OPRND_2[25]~corein ; combout          ;
+; |cla_32|OPRND_1[25]  ; |cla_32|OPRND_1[25]~corein ; combout          ;
+; |cla_32|OPRND_1[26]  ; |cla_32|OPRND_1[26]~corein ; combout          ;
+; |cla_32|OPRND_2[26]  ; |cla_32|OPRND_2[26]~corein ; combout          ;
+; |cla_32|OPRND_2[27]  ; |cla_32|OPRND_2[27]~corein ; combout          ;
+; |cla_32|OPRND_1[27]  ; |cla_32|OPRND_1[27]~corein ; combout          ;
+; |cla_32|OPRND_1[28]  ; |cla_32|OPRND_1[28]~corein ; combout          ;
+; |cla_32|OPRND_2[28]  ; |cla_32|OPRND_2[28]~corein ; combout          ;
+; |cla_32|OPRND_2[29]  ; |cla_32|OPRND_2[29]~corein ; combout          ;
+; |cla_32|OPRND_1[29]  ; |cla_32|OPRND_1[29]~corein ; combout          ;
+; |cla_32|OPRND_1[30]  ; |cla_32|OPRND_1[30]~corein ; combout          ;
+; |cla_32|OPRND_2[30]  ; |cla_32|OPRND_2[30]~corein ; combout          ;
+; |cla_32|OPRND_2[31]  ; |cla_32|OPRND_2[31]~corein ; combout          ;
+; |cla_32|OPRND_1[31]  ; |cla_32|OPRND_1[31]~corein ; combout          ;
++----------------------+----------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Thu Nov 09 12:14:18 2023
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off cla_32 -c cla_32
+Info: Using vector source file "D:/Kuliah/Semester 5/Prak arsikom/Modul 4/1_Lab/Tugas_3/Timing.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of Timing.vwf called cla_32.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      22.35 %
+Info: Number of transitions in simulation is 3715
+Info: Vector file Timing.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 149 megabytes
+    Info: Processing ended: Thu Nov 09 12:14:19 2023
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+
