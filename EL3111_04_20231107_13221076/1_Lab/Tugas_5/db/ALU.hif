@@ -20,18 +20,18 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-cla_32
+ALU
 # storage
-db|ALU.(1).cnf
-db|ALU.(1).cnf
+db|ALU.(0).cnf
+db|ALU.(0).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_insensitive
 # source_file
-cla_32.vhd
-a43c83ea7b094c2a2d5d816aefcaf63
+alu.vhd
+f0bd4c1bfc632da2a990cd7a9f16b50
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -43,26 +43,11 @@ ON
 AUTO_ROM_RECOGNITION
 ON
 }
-# user_parameter {
- constraint(oprnd_1)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(oprnd_2)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(c_in)
-1 downto 0
-PARAMETER_STRING
-USR
- constraint(result)
-31 downto 0
-PARAMETER_STRING
-USR
+# hierarchies {
+|
 }
 # lmf
-d:|quartus|lmf|maxplus2.lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
 a36c8ec425c8a2589af98b2d4daabc3
 # macro_sequence
 
@@ -70,8 +55,8 @@ a36c8ec425c8a2589af98b2d4daabc3
 # entity
 cla_32
 # storage
-db|ALU.(2).cnf
-db|ALU.(2).cnf
+db|ALU.(1).cnf
+db|ALU.(1).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -109,40 +94,7 @@ USR
 cla_32:ADDER
 }
 # lmf
-d:|quartus|lmf|maxplus2.lmf
-a36c8ec425c8a2589af98b2d4daabc3
-# macro_sequence
-
-# end
-# entity
-ALU
-# storage
-db|ALU.(0).cnf
-db|ALU.(0).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-alu.vhd
-63e68be94f46f19ba83bc96a768ec5
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-|
-}
-# lmf
-d:|quartus|lmf|maxplus2.lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
 a36c8ec425c8a2589af98b2d4daabc3
 # macro_sequence
 

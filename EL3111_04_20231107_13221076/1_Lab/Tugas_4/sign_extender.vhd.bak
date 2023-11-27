@@ -1,12 +1,10 @@
 -- Praktikum EL3111 Arsitektur Sistem Komputer
--- Modul : 4
--- Percobaan : 4
--- Tanggal : 4 November 2023
--- Kelompok : 9
--- Rombongan : D
--- Nama (NIM) 1 : Indira Pramudita Amada (13221081)
--- Nama (NIM) 2 : Mochamad Arif Firdaus (13221078)
--- Nama File : sign_extender.vhd
+-- Modul        : 4
+-- Tanggal      : 9 November 2023
+-- Kelompok     : 9
+-- Rombongan    : D
+-- Nama (NIM)   : Dimas Ridhwana Shalsareza (13221076)
+-- Nama File 	: sign_extender.vhd
 
 LIBRARY ieee;
 USE IEEE.STD_LOGIC_1164.ALL;
@@ -22,8 +20,8 @@ PORT (
 );
 END sign_extender;
 
-ARCHITECTURE Behavioral OF sign_extender IS
+ARCHITECTURE Behavioral OF sign_extender sIS
 BEGIN
-	D_OUT(31 DOWNTO 16) <= (OTHERS => D_IN (15));
 	D_OUT(15 DOWNTO 0) <= D_IN(15 DOWNTO 0);
+	D_OUT(31 DOWNTO 16) <= (OTHERS => D_IN (15));
 END Behavioral;

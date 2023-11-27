@@ -1,0 +1,21 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity program_counter is
+    port (
+        PC_in   : IN    STD_LOGIC_VECTOR (31 downto 0);
+        CLK_in  : IN    STD_LOGIC;
+        PC_out  : OUT   STD_LOGIC_VECTOR (31 downto 0)
+    );
+end entity program_counter;
+
+architecture behavioral of program_counter is
+begin
+    process (all)
+    begin
+        if RISING_EDGE(CLK_in) THEN
+            PC_out <= PC_in;
+        end if;
+    end process;    
+end architecture behavioral;

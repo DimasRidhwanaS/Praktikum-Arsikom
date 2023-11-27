@@ -1,5 +1,5 @@
 Simulator report for sign_extender
-Thu Nov 09 14:20:59 2023
+Mon Nov 13 13:29:58 2023
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -47,9 +47,10 @@ applicable agreement for further details.
 ; Simulation End Time         ; 1.0 us       ;
 ; Simulation Netlist Size     ; 48 nodes     ;
 ; Simulation Coverage         ;     100.00 % ;
-; Total Number of Transitions ; 5000         ;
+; Total Number of Transitions ; 4996         ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Cyclone II   ;
+; Device                      ; EP2C5F256C6  ;
 +-----------------------------+--------------+
 
 
@@ -58,7 +59,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------------+-------------------+---------------+
 ; Option                                                                                     ; Setting           ; Default Value ;
 +--------------------------------------------------------------------------------------------+-------------------+---------------+
-; Simulation mode                                                                            ; Functional        ; Timing        ;
+; Simulation mode                                                                            ; Timing            ; Timing        ;
 ; Start time                                                                                 ; 0 ns              ; 0 ns          ;
 ; Simulation results format                                                                  ; CVWF              ;               ;
 ; Vector input source                                                                        ; sign_extender.vwf ;               ;
@@ -105,60 +106,60 @@ Please use Quartus II to view the waveform report data.
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+------------------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                            ;
-+--------------------------+--------------------------+------------------+
-; Node Name                ; Output Port Name         ; Output Port Type ;
-+--------------------------+--------------------------+------------------+
-; |sign_extender|D_In[0]   ; |sign_extender|D_In[0]   ; out              ;
-; |sign_extender|D_In[1]   ; |sign_extender|D_In[1]   ; out              ;
-; |sign_extender|D_In[2]   ; |sign_extender|D_In[2]   ; out              ;
-; |sign_extender|D_In[3]   ; |sign_extender|D_In[3]   ; out              ;
-; |sign_extender|D_In[4]   ; |sign_extender|D_In[4]   ; out              ;
-; |sign_extender|D_In[5]   ; |sign_extender|D_In[5]   ; out              ;
-; |sign_extender|D_In[6]   ; |sign_extender|D_In[6]   ; out              ;
-; |sign_extender|D_In[7]   ; |sign_extender|D_In[7]   ; out              ;
-; |sign_extender|D_In[8]   ; |sign_extender|D_In[8]   ; out              ;
-; |sign_extender|D_In[9]   ; |sign_extender|D_In[9]   ; out              ;
-; |sign_extender|D_In[10]  ; |sign_extender|D_In[10]  ; out              ;
-; |sign_extender|D_In[11]  ; |sign_extender|D_In[11]  ; out              ;
-; |sign_extender|D_In[12]  ; |sign_extender|D_In[12]  ; out              ;
-; |sign_extender|D_In[13]  ; |sign_extender|D_In[13]  ; out              ;
-; |sign_extender|D_In[14]  ; |sign_extender|D_In[14]  ; out              ;
-; |sign_extender|D_In[15]  ; |sign_extender|D_In[15]  ; out              ;
-; |sign_extender|D_Out[0]  ; |sign_extender|D_Out[0]  ; pin_out          ;
-; |sign_extender|D_Out[1]  ; |sign_extender|D_Out[1]  ; pin_out          ;
-; |sign_extender|D_Out[2]  ; |sign_extender|D_Out[2]  ; pin_out          ;
-; |sign_extender|D_Out[3]  ; |sign_extender|D_Out[3]  ; pin_out          ;
-; |sign_extender|D_Out[4]  ; |sign_extender|D_Out[4]  ; pin_out          ;
-; |sign_extender|D_Out[5]  ; |sign_extender|D_Out[5]  ; pin_out          ;
-; |sign_extender|D_Out[6]  ; |sign_extender|D_Out[6]  ; pin_out          ;
-; |sign_extender|D_Out[7]  ; |sign_extender|D_Out[7]  ; pin_out          ;
-; |sign_extender|D_Out[8]  ; |sign_extender|D_Out[8]  ; pin_out          ;
-; |sign_extender|D_Out[9]  ; |sign_extender|D_Out[9]  ; pin_out          ;
-; |sign_extender|D_Out[10] ; |sign_extender|D_Out[10] ; pin_out          ;
-; |sign_extender|D_Out[11] ; |sign_extender|D_Out[11] ; pin_out          ;
-; |sign_extender|D_Out[12] ; |sign_extender|D_Out[12] ; pin_out          ;
-; |sign_extender|D_Out[13] ; |sign_extender|D_Out[13] ; pin_out          ;
-; |sign_extender|D_Out[14] ; |sign_extender|D_Out[14] ; pin_out          ;
-; |sign_extender|D_Out[15] ; |sign_extender|D_Out[15] ; pin_out          ;
-; |sign_extender|D_Out[16] ; |sign_extender|D_Out[16] ; pin_out          ;
-; |sign_extender|D_Out[17] ; |sign_extender|D_Out[17] ; pin_out          ;
-; |sign_extender|D_Out[18] ; |sign_extender|D_Out[18] ; pin_out          ;
-; |sign_extender|D_Out[19] ; |sign_extender|D_Out[19] ; pin_out          ;
-; |sign_extender|D_Out[20] ; |sign_extender|D_Out[20] ; pin_out          ;
-; |sign_extender|D_Out[21] ; |sign_extender|D_Out[21] ; pin_out          ;
-; |sign_extender|D_Out[22] ; |sign_extender|D_Out[22] ; pin_out          ;
-; |sign_extender|D_Out[23] ; |sign_extender|D_Out[23] ; pin_out          ;
-; |sign_extender|D_Out[24] ; |sign_extender|D_Out[24] ; pin_out          ;
-; |sign_extender|D_Out[25] ; |sign_extender|D_Out[25] ; pin_out          ;
-; |sign_extender|D_Out[26] ; |sign_extender|D_Out[26] ; pin_out          ;
-; |sign_extender|D_Out[27] ; |sign_extender|D_Out[27] ; pin_out          ;
-; |sign_extender|D_Out[28] ; |sign_extender|D_Out[28] ; pin_out          ;
-; |sign_extender|D_Out[29] ; |sign_extender|D_Out[29] ; pin_out          ;
-; |sign_extender|D_Out[30] ; |sign_extender|D_Out[30] ; pin_out          ;
-; |sign_extender|D_Out[31] ; |sign_extender|D_Out[31] ; pin_out          ;
-+--------------------------+--------------------------+------------------+
++------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                  ;
++--------------------------+--------------------------------+------------------+
+; Node Name                ; Output Port Name               ; Output Port Type ;
++--------------------------+--------------------------------+------------------+
+; |sign_extender|D_Out[0]  ; |sign_extender|D_Out[0]        ; padio            ;
+; |sign_extender|D_Out[1]  ; |sign_extender|D_Out[1]        ; padio            ;
+; |sign_extender|D_Out[2]  ; |sign_extender|D_Out[2]        ; padio            ;
+; |sign_extender|D_Out[3]  ; |sign_extender|D_Out[3]        ; padio            ;
+; |sign_extender|D_Out[4]  ; |sign_extender|D_Out[4]        ; padio            ;
+; |sign_extender|D_Out[5]  ; |sign_extender|D_Out[5]        ; padio            ;
+; |sign_extender|D_Out[6]  ; |sign_extender|D_Out[6]        ; padio            ;
+; |sign_extender|D_Out[7]  ; |sign_extender|D_Out[7]        ; padio            ;
+; |sign_extender|D_Out[8]  ; |sign_extender|D_Out[8]        ; padio            ;
+; |sign_extender|D_Out[9]  ; |sign_extender|D_Out[9]        ; padio            ;
+; |sign_extender|D_Out[10] ; |sign_extender|D_Out[10]       ; padio            ;
+; |sign_extender|D_Out[11] ; |sign_extender|D_Out[11]       ; padio            ;
+; |sign_extender|D_Out[12] ; |sign_extender|D_Out[12]       ; padio            ;
+; |sign_extender|D_Out[13] ; |sign_extender|D_Out[13]       ; padio            ;
+; |sign_extender|D_Out[14] ; |sign_extender|D_Out[14]       ; padio            ;
+; |sign_extender|D_Out[15] ; |sign_extender|D_Out[15]       ; padio            ;
+; |sign_extender|D_Out[16] ; |sign_extender|D_Out[16]       ; padio            ;
+; |sign_extender|D_Out[17] ; |sign_extender|D_Out[17]       ; padio            ;
+; |sign_extender|D_Out[18] ; |sign_extender|D_Out[18]       ; padio            ;
+; |sign_extender|D_Out[19] ; |sign_extender|D_Out[19]       ; padio            ;
+; |sign_extender|D_Out[20] ; |sign_extender|D_Out[20]       ; padio            ;
+; |sign_extender|D_Out[21] ; |sign_extender|D_Out[21]       ; padio            ;
+; |sign_extender|D_Out[22] ; |sign_extender|D_Out[22]       ; padio            ;
+; |sign_extender|D_Out[23] ; |sign_extender|D_Out[23]       ; padio            ;
+; |sign_extender|D_Out[24] ; |sign_extender|D_Out[24]       ; padio            ;
+; |sign_extender|D_Out[25] ; |sign_extender|D_Out[25]       ; padio            ;
+; |sign_extender|D_Out[26] ; |sign_extender|D_Out[26]       ; padio            ;
+; |sign_extender|D_Out[27] ; |sign_extender|D_Out[27]       ; padio            ;
+; |sign_extender|D_Out[28] ; |sign_extender|D_Out[28]       ; padio            ;
+; |sign_extender|D_Out[29] ; |sign_extender|D_Out[29]       ; padio            ;
+; |sign_extender|D_Out[30] ; |sign_extender|D_Out[30]       ; padio            ;
+; |sign_extender|D_Out[31] ; |sign_extender|D_Out[31]       ; padio            ;
+; |sign_extender|D_In[0]   ; |sign_extender|D_In[0]~corein  ; combout          ;
+; |sign_extender|D_In[1]   ; |sign_extender|D_In[1]~corein  ; combout          ;
+; |sign_extender|D_In[2]   ; |sign_extender|D_In[2]~corein  ; combout          ;
+; |sign_extender|D_In[3]   ; |sign_extender|D_In[3]~corein  ; combout          ;
+; |sign_extender|D_In[4]   ; |sign_extender|D_In[4]~corein  ; combout          ;
+; |sign_extender|D_In[5]   ; |sign_extender|D_In[5]~corein  ; combout          ;
+; |sign_extender|D_In[6]   ; |sign_extender|D_In[6]~corein  ; combout          ;
+; |sign_extender|D_In[7]   ; |sign_extender|D_In[7]~corein  ; combout          ;
+; |sign_extender|D_In[8]   ; |sign_extender|D_In[8]~corein  ; combout          ;
+; |sign_extender|D_In[9]   ; |sign_extender|D_In[9]~corein  ; combout          ;
+; |sign_extender|D_In[10]  ; |sign_extender|D_In[10]~corein ; combout          ;
+; |sign_extender|D_In[11]  ; |sign_extender|D_In[11]~corein ; combout          ;
+; |sign_extender|D_In[12]  ; |sign_extender|D_In[12]~corein ; combout          ;
+; |sign_extender|D_In[13]  ; |sign_extender|D_In[13]~corein ; combout          ;
+; |sign_extender|D_In[14]  ; |sign_extender|D_In[14]~corein ; combout          ;
+; |sign_extender|D_In[15]  ; |sign_extender|D_In[15]~corein ; combout          ;
++--------------------------+--------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
@@ -190,20 +191,20 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Thu Nov 09 14:20:59 2023
+    Info: Processing started: Mon Nov 13 13:29:58 2023
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off sign_extender -c sign_extender
-Info: Using vector source file "C:/Users/Indira A/Prak Arsikom/EL3111_04_20231107_13221081/1_Lab/Tugas 4/sign_extender.vwf"
+Info: Using vector source file "D:/Dimas Github/Praktikum-Arsikom/EL3111_04_20231107_13221076/1_Lab/Tugas_4/sign_extender.vwf"
 Info: Overwriting simulation input file with simulation results
     Info: A backup of sign_extender.vwf called sign_extender.sim_ori.vwf has been created in the db folder
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
 Info: Simulation coverage is     100.00 %
-Info: Number of transitions in simulation is 5000
+Info: Number of transitions in simulation is 4996
 Info: Vector file sign_extender.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 154 megabytes
-    Info: Processing ended: Thu Nov 09 14:20:59 2023
+    Info: Peak virtual memory: 151 megabytes
+    Info: Processing ended: Mon Nov 13 13:29:58 2023
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

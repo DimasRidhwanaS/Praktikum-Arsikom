@@ -31,7 +31,7 @@ ON
 # case_insensitive
 # source_file
 sign_extender.vhd
-46d86f8505ccdabbce2dbcb9eb4d7c
+eb4b51c5b1bc23cfa83fc54e832dc3
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -47,7 +47,7 @@ ON
 |
 }
 # lmf
-d:|quartus|lmf|maxplus2.lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
 a36c8ec425c8a2589af98b2d4daabc3
 # macro_sequence
 

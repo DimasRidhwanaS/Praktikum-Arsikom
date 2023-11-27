@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ALU
-Thu Nov 09 14:06:19 2023
+Mon Nov 13 13:30:52 2023
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +------------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 09 14:06:19 2023        ;
+; Analysis & Synthesis Status        ; Successful - Mon Nov 13 13:30:52 2023        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; ALU                                          ;
 ; Top-level Entity Name              ; ALU                                          ;
@@ -143,19 +143,19 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 4      ;
+; Number detected on machine ; 12     ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                     ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                        ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------+
-; ALU.vhd                          ; yes             ; User VHDL File  ; C:/Users/Indira A/Prak Arsikom/EL3111_04_20231107_13221081/1_Lab/Tugas 5/ALU.vhd    ;
-; cla_32.vhd                       ; yes             ; User VHDL File  ; C:/Users/Indira A/Prak Arsikom/EL3111_04_20231107_13221081/1_Lab/Tugas 5/cla_32.vhd ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                        ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                           ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------+
+; ALU.vhd                          ; yes             ; User VHDL File  ; D:/Dimas Github/Praktikum-Arsikom/EL3111_04_20231107_13221076/1_Lab/Tugas_5/ALU.vhd    ;
+; cla_32.vhd                       ; yes             ; User VHDL File  ; D:/Dimas Github/Praktikum-Arsikom/EL3111_04_20231107_13221076/1_Lab/Tugas_5/cla_32.vhd ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -228,7 +228,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Thu Nov 09 14:06:18 2023
+    Info: Processing started: Mon Nov 13 13:30:51 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
 Info: Found 2 design units, including 1 entities, in source file alu.vhd
     Info: Found design unit 1: ALU-Behavioral
@@ -243,8 +243,8 @@ Info: Implemented 225 device resources after synthesis - the final resource coun
     Info: Implemented 32 output pins
     Info: Implemented 128 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 243 megabytes
-    Info: Processing ended: Thu Nov 09 14:06:19 2023
+    Info: Peak virtual memory: 238 megabytes
+    Info: Processing ended: Mon Nov 13 13:30:52 2023
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
