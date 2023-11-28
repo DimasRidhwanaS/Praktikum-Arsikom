@@ -1,13 +1,11 @@
 -- Praktikum EL3111 Arsitektur Sistem Komputer
--- Modul : 5
--- Percobaan : 1
--- Tanggal : 1 Desember 2014
--- Kelompok : III
--- Rombongan : A
--- Nama (NIM) 1 : Damon Prasetyo Arso (13212001)
--- Nama (NIM) 2 : Muhammad Mustadi (13210056)
--- Nama File : lshift_26_28.vhd
--- Deskripsi : Program Left shifter 26 bit to 28 bit
+-- Modul        : 5
+-- Percobaan    : 1
+-- Tanggal      : 24 November 2023
+-- Kelompok     : 9
+-- Rombongan    : D
+-- Nama (NIM) 1 : Dimas Ridhwana Shalsareza 	(13221076)
+-- Nama (NIM) 2 : Muhammad Zhafran Arrafi Anwar (13221079)
 
 
 LIBRARY IEEE;

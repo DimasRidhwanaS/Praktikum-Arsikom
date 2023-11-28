@@ -1,3 +1,12 @@
+-- Praktikum EL3111 Arsitektur Sistem Komputer
+-- Modul        : 5
+-- Percobaan    : 1
+-- Tanggal      : 24 November 2023
+-- Kelompok     : 9
+-- Rombongan    : D
+-- Nama (NIM) 1 : Dimas Ridhwana Shalsareza 	(13221076)
+-- Nama (NIM) 2 : Muhammad Zhafran Arrafi Anwar (13221079)
+
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
